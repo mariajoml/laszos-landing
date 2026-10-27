@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laszos — Mantelería y blancos personalizados</title>
+  <meta name="description" content="Manteles, servilletas, caminos, paños y toallas con estampados de autor y monograma personalizado.">
+  <link rel="icon" href="assets/brand/logo-ink.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar" role="note">
+    <div class="topbar__track">
+      <span>Hecho a mano, pieza por pieza</span><span>✦</span>
+      <span>Personaliza con tu monograma</span><span>✦</span>
+      <span>Estampados de autor</span><span>✦</span>
+      <span>Pedidos para eventos y regalos</span><span>✦</span>
+      <span>Hecho a mano, pieza por pieza</span><span>✦</span>
+      <span>Personaliza con tu monograma</span><span>✦</span>
+      <span>Estampados de autor</span><span>✦</span>
+      <span>Pedidos para eventos y regalos</span><span>✦</span>
+    </div>
+  </div>
+
+  <header class="header" id="top">
+    <div class="header__inner">
+      <button class="icon-btn header__menu" aria-label="Abrir menú" data-open-menu>
+        <svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <nav class="header__nav" aria-label="Categorías">
+        <a href="#tienda" data-filter-link="manteles">Manteles</a>
+        <a href="#tienda" data-filter-link="servilletas">Servilletas</a>
+        <a href="#tienda" data-filter-link="caminos">Caminos</a>
+        <a href="#tienda" data-filter-link="personalizados">Personalizados</a>
+        <a href="#toallas">Toallas</a>
+      </nav>
+      <a class="header__logo" href="#top" aria-label="Laszos, inicio">
+        <img src="assets/brand/logo-ink.png" alt="Laszos">
+      </a>
+      <div class="header__actions">
+        <a href="#monograma" class="header__link">Monograma</a>
+        <a href="#ocasiones" class="header__link">Ocasiones</a>
+        <button class="icon-btn" aria-label="Buscar" data-focus-search>
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Favoritos" data-show-favs>
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+          <span class="badge" data-fav-count hidden>0</span>
+        </button>
+        <button class="icon-btn" aria-label="Bolsa de compra" data-open-cart>
+          <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+          <span class="badge" data-cart-count hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" data-menu hidden>
+    <div class="mobile-nav__panel">
+      <button class="icon-btn mobile-nav__close" aria-label="Cerrar menú" data-close-menu>
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <img src="assets/brand/logo-ink.png" alt="" class="mobile-nav__logo">
+      <a href="#tienda" data-filter-link="manteles">Manteles</a>
+      <a href="#tienda" data-filter-link="servilletas">Servilletas</a>
+      <a href="#tienda" data-filter-link="caminos">Caminos e individuales</a>
+      <a href="#tienda" data-filter-link="panos">Paños de cocina</a>
+      <a href="#tienda" data-filter-link="personalizados">Personalizados</a>
+      <a href="#toallas">Toallas</a>
+      <a href="#monograma">Crea tu monograma</a>
+      <a href="#ocasiones">Ocasiones</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Mantelería de autor</p>
+        <h1>El arte de <em>vestir</em> la mesa</h1>
+        <p class="hero__lead">Manteles, servilletas y blancos con estampados pintados para Laszos, terminados a mano y listos para llevar tu monograma.</p>
+        <div class="hero__ctas">
+          <a href="#tienda" class="btn btn--ink">Comprar la colección</a>
+          <a href="#monograma" class="btn btn--ghost">Personalizar una pieza</a>
+        </div>
+        <ul class="hero__facts">
+          <li><strong>+50</strong><span>diseños exclusivos</span></li>
+          <li><strong>6</strong><span>familias de producto</span></li>
+          <li><strong>1</strong><span>monograma, el tuyo</span></li>
+        </ul>
+      </div>
+      <div class="hero__media">
+        <img src="assets/img/escenas/hero.jpg" alt="Mesa puesta en el jardín con mantel botánico y platos rosas" class="hero__img" fetchpriority="high">
+        <img src="assets/img/escenas/boda.jpg" alt="Mesa de boda con servilletas monogramadas" class="hero__img hero__img--small" loading="lazy">
+        <button class="hero__card" data-quick="mantel-aves-del-tropico">
+          <img src="assets/img/productos/mantel-aves-del-tropico.jpg" alt="">
+          <span>
+            <small>Nuevo</small>
+            <b>Mantel Aves del Trópico</b>
+            <em data-price-of="mantel-aves-del-tropico"></em>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="cats" aria-labelledby="cats-title">
+      <div class="section-head">
+        <h2 id="cats-title">Compra por categoría</h2>
+        <a href="#tienda" class="link-arrow" data-filter-link="todo">Ver todo</a>
+      </div>
+      <div class="cats__grid" data-cats></div>
+    </section>
+
+    <!-- Marketplace -->
+    <section class="shop" id="tienda" aria-labelledby="shop-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">La tienda</p>
+          <h2 id="shop-title">Todo para tu mesa</h2>
+        </div>
+        <p class="shop__count" data-count></p>
+      </div>
+      <div class="toolbar">
+        <div class="chips" role="tablist" data-chips></div>
+        <div class="toolbar__right">
+          <label class="search">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <input type="search" placeholder="Buscar: limones, toile, jirafas…" data-search aria-label="Buscar productos">
+          </label>
+          <label class="select">
+            <span class="visually-hidden">Ordenar</span>
+            <select data-sort>
+              <option value="destacados">Destacados</option>
+              <option value="precio-asc">Precio: menor a mayor</option>
+              <option value="precio-desc">Precio: mayor a menor</option>
+              <option value="nombre">Nombre A–Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="grid" data-grid></div>
+      <p class="empty" data-empty hidden>No encontramos piezas con esa búsqueda. Prueba con otra palabra.</p>
+      <div class="shop__more"><button class="btn btn--ghost" data-more>Ver más piezas</button></div>
+    </section>
+
+    <!-- Towels -->
+    <section class="towels" id="toallas" aria-labelledby="towels-title">
+      <div class="towels__head">
+        <div>
+          <p class="eyebrow eyebrow--light">Colección de verano</p>
+          <h2 id="towels-title">Toallas <em>Laszos</em></h2>
+          <p>Doce estampados firmados, del jardín a la playa. Cada toalla lleva el lazo de la casa bordado en la esquina.</p>
+        </div>
+        <div class="towels__nav">
+          <button class="icon-btn icon-btn--light" aria-label="Anterior" data-towel-prev><svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></svg></button>
+          <button class="icon-btn icon-btn--light" aria-label="Siguiente" data-towel-next><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="towels__rail" data-towels></div>
+    </section>
+
+    <!-- Monogram -->
+    <section class="mono" id="monograma" aria-labelledby="mono-title">
+      <div class="mono__preview">
+        <div class="napkin" data-napkin>
+          <div class="napkin__border"></div>
+          <span class="napkin__mark" data-mark>ML</span>
+        </div>
+        <p class="mono__caption">Vista previa ilustrativa. El bordado final se confirma contigo antes de producir.</p>
+      </div>
+      <div class="mono__form">
+        <p class="eyebrow">Estudio de monograma</p>
+        <h2 id="mono-title">Hazla <em>tuya</em></h2>
+        <p>Servilletas, toallas de visitas y manteles pueden llevar tus iniciales. Diseña tu monograma y lo agregamos a tu pedido.</p>
+        <label class="field">
+          <span>Iniciales (hasta 3)</span>
+          <input type="text" maxlength="3" value="ML" data-mono-input autocomplete="off">
+        </label>
+        <fieldset class="field">
+          <legend>Estilo</legend>
+          <div class="seg" data-mono-style>
+            <button type="button" class="is-on" data-v="script">Caligrafía</button>
+            <button type="button" data-v="serif">Clásico</button>
+            <button type="button" data-v="block">Romano</button>
+          </div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Color de hilo</legend>
+          <div class="swatches" data-mono-thread></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Tela</legend>
+          <div class="swatches" data-mono-cloth></div>
+        </fieldset>
+        <button class="btn btn--ink" data-mono-add>Agregar monograma a mi pedido</button>
+      </div>
+    </section>
+
+    <!-- Occasions -->
+    <section class="occ" id="ocasiones" aria-labelledby="occ-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Inspiración</p>
+          <h2 id="occ-title">Mesas para cada ocasión</h2>
+        </div>
+      </div>
+      <div class="occ__grid">
+        <a class="occ__tile occ__tile--tall" href="#tienda" data-filter-link="personalizados">
+          <img src="assets/img/escenas/boda.jpg" alt="Mesa de boda con flores blancas" loading="lazy">
+          <span><small>Bodas y bautizos</small>Monogramas para el gran día</span>
+        </a>
+        <a class="occ__tile" href="#tienda" data-search-link="navidad cabaña">
+          <img src="assets/img/escenas/navidad.jpg" alt="Mesa de Navidad con servilleta de pino bordado" loading="lazy">
+          <span><small>Temporada</small>Navidad en casa</span>
+        </a>
+        <a class="occ__tile" href="#tienda" data-filter-link="manteles">
+          <img src="assets/img/escenas/jardin.jpg" alt="Mesa redonda en el jardín con mantel de aves tropicales" loading="lazy">
+          <span><small>Al aire libre</small>Comidas de jardín</span>
+        </a>
+        <a class="occ__tile" href="#tienda" data-filter-link="servilletas">
+          <img src="assets/img/escenas/brunch.jpg" alt="Mesa de brunch turquesa con servilletas amarillas" loading="lazy">
+          <span><small>Fin de semana</small>Brunch y té</span>
+        </a>
+        <a class="occ__tile" href="#tienda" data-filter-link="caminos">
+          <img src="assets/img/escenas/celebracion.jpg" alt="Mesa de celebración en tonos rosa" loading="lazy">
+          <span><small>Celebraciones</small>Cumpleaños y fiestas</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Promise -->
+    <section class="promise" aria-label="Por qué Laszos">
+      <div><svg viewBox="0 0 32 32"><path d="M6 26c6-2 10-8 10-20 0 12 4 18 10 20"/><path d="M16 6v20"/></svg><h3>Estampados de autor</h3><p>Ilustraciones botánicas y animales pintados para nuestras colecciones.</p></div>
+      <div><svg viewBox="0 0 32 32"><path d="M8 24 24 8"/><circle cx="25" cy="7" r="2"/><path d="M6 20c3 0 6 3 6 6"/></svg><h3>Terminado a mano</h3><p>Dobladillos, grecas y ribetes cuidados pieza por pieza.</p></div>
+      <div><svg viewBox="0 0 32 32"><path d="M16 27c-5-4-10-7-10-13a5 5 0 0 1 10-1 5 5 0 0 1 10 1c0 6-5 9-10 13Z"/></svg><h3>Tu monograma</h3><p>Iniciales, nombres y escudos bordados o estampados a tu medida.</p></div>
+      <div><svg viewBox="0 0 32 32"><rect x="5" y="11" width="22" height="15" rx="1"/><path d="M5 15h22M16 11v15M16 11c-2-5-8-5-7-1 1 2 7 1 7 1Zm0 0c2-5 8-5 7-1-1 2-7 1-7 1Z"/></svg><h3>Listo para regalar</h3><p>Envolvemos cada pedido con el lazo de la casa.</p></div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="news">
+      <img src="assets/brand/logo-ink.png" alt="" class="news__logo">
+      <h2>Únete a la mesa de <em>Laszos</em></h2>
+      <p>Lanzamientos de colección, ideas para poner la mesa y piezas de edición limitada.</p>
+      <form class="news__form" data-news>
+        <label class="visually-hidden" for="news-email">Correo electrónico</label>
+        <input id="news-email" type="email" required placeholder="tu@correo.com">
+        <button class="btn btn--ink">Suscribirme</button>
+      </form>
+      <p class="news__ok" data-news-ok hidden>¡Gracias! Pronto tendrás noticias nuestras.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="assets/brand/logo-ivory.png" alt="Laszos">
+      <p>Mantelería, servilletas y blancos personalizados.</p>
+    </div>
+    <div class="footer__cols">
+      <div><h4>Tienda</h4><a href="#tienda" data-filter-link="manteles">Manteles</a><a href="#tienda" data-filter-link="servilletas">Servilletas</a><a href="#tienda" data-filter-link="caminos">Caminos e individuales</a><a href="#tienda" data-filter-link="panos">Paños de cocina</a><a href="#toallas">Toallas</a></div>
+      <div><h4>Servicios</h4><a href="#monograma">Monogramas</a><a href="#ocasiones">Eventos y bodas</a><a href="#tienda" data-filter-link="personalizados">Regalos personalizados</a></div>
+      <div><h4>Laszos</h4><a href="#" data-contact>Contacto por WhatsApp</a><a href="#">Instagram</a><a href="#">Cuidados de la tela</a></div>
+    </div>
+    <p class="footer__legal">© <span data-year></span> Laszos. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Quick view -->
+  <div class="modal" data-modal hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+      <button class="icon-btn modal__close" aria-label="Cerrar" data-close-modal><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="qv" data-qv></div>
+    </div>
+  </div>
+
+  <!-- Cart -->
+  <div class="drawer" data-cart hidden>
+    <div class="drawer__backdrop" data-close-cart></div>
+    <aside class="drawer__panel" aria-label="Bolsa de compra">
+      <div class="drawer__head">
+        <h3>Tu bolsa</h3>
+        <button class="icon-btn" aria-label="Cerrar bolsa" data-close-cart><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <div class="drawer__body" data-cart-items></div>
+      <div class="drawer__foot">
+        <div class="drawer__total"><span>Subtotal</span><strong data-cart-total>$0</strong></div>
+        <p class="drawer__note">Confirmamos existencias, personalización y envío por WhatsApp.</p>
+        <button class="btn btn--ink btn--block" data-checkout>Enviar pedido por WhatsApp</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

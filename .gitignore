@@ -1,0 +1,5 @@
+# Fotos originales sin procesar (la web usa las versiones optimizadas de assets/)
+/*.jpg
+/*.png
+.DS_Store
+.claude/
