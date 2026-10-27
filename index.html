@@ -28,22 +28,17 @@
 
   <header class="header" id="top">
     <div class="header__inner">
-      <button class="icon-btn header__menu" aria-label="Abrir menú" data-open-menu>
-        <svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
-      </button>
-      <nav class="header__nav" aria-label="Categorías">
-        <a href="#tienda" data-filter-link="manteles">Manteles</a>
-        <a href="#tienda" data-filter-link="servilletas">Servilletas</a>
-        <a href="#tienda" data-filter-link="caminos">Caminos</a>
-        <a href="#tienda" data-filter-link="personalizados">Personalizados</a>
-        <a href="#toallas">Pañoletas</a>
-      </nav>
+      <div class="header__left">
+        <button class="icon-btn header__menu" aria-label="Abrir menú" data-open-menu>
+          <svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+        </button>
+        <a href="#monograma" class="header__link">Monograma</a>
+        <a href="#ocasiones" class="header__link">Ocasiones</a>
+      </div>
       <a class="header__logo" href="#top" aria-label="Laszos, inicio">
         <img src="assets/brand/logo-ink.png" alt="Laszos">
       </a>
       <div class="header__actions">
-        <a href="#monograma" class="header__link">Monograma</a>
-        <a href="#ocasiones" class="header__link">Ocasiones</a>
         <button class="icon-btn" aria-label="Buscar" data-focus-search>
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
         </button>
@@ -57,6 +52,15 @@
         </button>
       </div>
     </div>
+    <nav class="header__nav" aria-label="Categorías">
+      <a href="#tienda" data-filter-link="manteles">Manteles</a>
+      <a href="#tienda" data-filter-link="servilletas">Servilletas</a>
+      <a href="#tienda" data-filter-link="caminos">Caminos</a>
+      <a href="#tienda" data-filter-link="panos">Paños de cocina</a>
+      <a href="#tienda" data-filter-link="personalizados">Personalizados</a>
+      <a href="#tienda" data-filter-link="panoletas">Pañoletas</a>
+      <a href="#tienda" data-filter-link="toallas">Toallas</a>
+    </nav>
   </header>
 
   <div class="mobile-nav" data-menu hidden>
