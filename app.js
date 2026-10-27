@@ -1,6 +1,6 @@
 (() => {
-  // Número de WhatsApp para recibir pedidos (formato internacional, solo dígitos). Vacío = el cliente elige el contacto.
-  const WHATSAPP = '';
+  // WhatsApp de Sandra para recibir pedidos (formato internacional, solo dígitos: 57 = Colombia).
+  const WHATSAPP = '573102913750';
   const MONOGRAM_PRICE = 25000;
 
   const PRODUCTS = window.LASZOS_PRODUCTS || [];
@@ -11,7 +11,8 @@
     { id: 'caminos', label: 'Caminos e individuales', short: 'Caminos', cover: 'assets/img/productos/individual-limones.jpg' },
     { id: 'panos', label: 'Paños de cocina', short: 'Paños', cover: 'assets/img/productos/pano-limonero-azul.jpg' },
     { id: 'personalizados', label: 'Personalizados', cover: 'assets/img/productos/toalla-laurel.jpg' },
-    { id: 'toallas', label: 'Toallas', cover: 'assets/img/toallas/tulipanes.jpg' },
+    { id: 'panoletas', label: 'Pañoletas', cover: 'assets/img/panoletas/tulipanes.jpg' },
+    { id: 'toallas', label: 'Toallas', cover: 'assets/img/toallas/tigre.jpg' },
   ];
   const DESCRIPTIONS = {
     manteles: 'Estampado de autor sobre tela de caída suave, con dobladillo terminado a mano. Disponible en otras medidas sobre pedido.',
@@ -19,6 +20,7 @@
     caminos: 'Para vestir la mesa sin cubrirla del todo. Combínalos con servilletas de la misma colección.',
     panos: 'Paño de cocina estampado, tan bonito para secar como para servir el pan.',
     personalizados: 'Lo bordamos o estampamos con tus iniciales. Te enviamos una prueba antes de producir.',
+    panoletas: 'Pañoleta cuadrada con estampado exclusivo y la firma de Laszos. Úsala al cuello, como servilleta grande o para cubrir la panera.',
     toallas: 'Toalla estampada con diseño exclusivo y el lazo de Laszos en la esquina. Ideal para playa, alberca o regalo.',
   };
   const THREADS = [['Azul francés', '#2c4a6e'], ['Verde salvia', '#5e6b57'], ['Bordeaux', '#8c2f39'], ['Oro viejo', '#a7834c'], ['Rosa antiguo', '#c27d8a'], ['Negro', '#1d1b19']];
@@ -41,11 +43,30 @@
     variant: {},
   };
 
+  /* ---------- Hero board ---------- */
+  const L = 'clamp(150px, 14vw, 220px)', M = 'clamp(130px, 11.5vw, 185px)', S = 'clamp(105px, 9vw, 145px)';
+  const PINS = [
+    ['panoleta-tulipanes', 11, 30, L, -7], ['serv-porcelana', 25, 15, S, 4], ['serv-zorro', 23, 64, M, 5], ['pano-gallo', 8, 80, S, -3],
+    ['panoleta-leopardo', 89, 30, L, 6], ['serv-palmera', 75, 16, S, -4], ['toalla-laurel', 77, 65, M, -5], ['pano-limonero-amarillo', 92, 80, S, 3],
+  ];
+  const board = $('[data-board]');
+  board.innerHTML = PINS.map(([id, x, y, w, r], i) => {
+    const p = byId[id];
+    return `<button class="pin" data-quick="${p.id}" data-depth="${(i % 3) + 1}" style="--x:${x}%;--y:${y}%;--w:${w};--r:${r}deg;--d:${120 + i * 90}ms">
+      <span class="pin__img"><img src="${p.imgs[0]}" alt="${esc(p.name)}"></span><span class="pin__cap">${esc(p.name)}</span></button>`;
+  }).join('');
+  const hero = $('.hero');
+  if (matchMedia('(hover: hover) and (min-width: 961px)').matches) {
+    hero.addEventListener('mousemove', e => {
+      const r = hero.getBoundingClientRect(), dx = (e.clientX - r.left) / r.width - .5, dy = (e.clientY - r.top) / r.height - .5;
+      $$('.pin', board).forEach(pin => { const k = pin.dataset.depth * 7; pin.style.setProperty('--px', `${-dx * k}px`); pin.style.setProperty('--py', `${-dy * k}px`); });
+    });
+  }
+
   /* ---------- Categories ---------- */
   $('[data-cats]').innerHTML = CATS.map(c => {
     const n = PRODUCTS.filter(p => p.cat === c.id).length;
-    const href = c.id === 'toallas' ? '#toallas' : '#tienda';
-    return `<a class="cat" href="${href}" data-filter-link="${c.id}">
+    return `<a class="cat" href="#tienda" data-filter-link="${c.id}">
       <div class="cat__img"><img src="${c.cover}" alt="" loading="lazy"></div>
       <h3>${c.short || c.label}</h3><span>${n} piezas</span></a>`;
   }).join('');
@@ -131,8 +152,7 @@
   }
   document.addEventListener('click', e => {
     const f = e.target.closest('[data-filter-link]');
-    if (f && f.dataset.filterLink !== 'toallas') { goShop(f.dataset.filterLink, ''); closeMenu(); }
-    else if (f) closeMenu();
+    if (f) { goShop(f.dataset.filterLink, ''); closeMenu(); }
     const s = e.target.closest('[data-search-link]');
     if (s) goShop('todo', s.dataset.searchLink.split(' ')[0]);
     const q = e.target.closest('[data-quick]');
@@ -153,9 +173,9 @@
 
   /* ---------- Towels rail ---------- */
   const rail = $('[data-towels]');
-  rail.innerHTML = PRODUCTS.filter(p => p.cat === 'toallas').map(p =>
+  rail.innerHTML = PRODUCTS.filter(p => p.cat === 'panoletas' || p.cat === 'toallas').map(p =>
     `<button class="towel" data-quick="${p.id}"><div class="towel__img"><img src="${p.imgs[0]}" alt="${esc(p.name)}" loading="lazy"></div>
-     <div class="towel__meta"><b>${esc(p.name.replace('Toalla ', ''))}</b><span>${money(p.price)}</span></div></button>`).join('');
+     <div class="towel__meta"><b>${esc(p.name)}</b><span>${money(p.price)}</span></div></button>`).join('');
   const step = () => rail.firstElementChild.getBoundingClientRect().width + 18;
   $('[data-towel-prev]').addEventListener('click', () => rail.scrollBy({ left: -step(), behavior: 'smooth' }));
   $('[data-towel-next]').addEventListener('click', () => rail.scrollBy({ left: step(), behavior: 'smooth' }));
@@ -255,11 +275,11 @@
   $('[data-checkout]').addEventListener('click', () => {
     const lines = state.cart.map(l => { const i = lineInfo(l); return `• ${l.qty} × ${i.name} (${i.sub}) — ${money(i.price * l.qty)}`; });
     const total = state.cart.reduce((s, l) => s + lineInfo(l).price * l.qty, 0);
-    const text = `Hola Laszos, me gustaría hacer este pedido:\n\n${lines.join('\n')}\n\nSubtotal: ${money(total)}`;
+    const text = `Hola Sandra, quiero hacer este pedido en Laszos:\n\n${lines.join('\n')}\n\nTotal: ${money(total)}\n\n¿Me envías el método de pago, por favor?`;
     window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
   });
   $('[data-contact]').addEventListener('click', e => {
-    e.preventDefault(); window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hola Laszos, quisiera información.')}`, '_blank', 'noopener');
+    e.preventDefault(); window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hola Sandra, quisiera información sobre los productos de Laszos.')}`, '_blank', 'noopener');
   });
 
   function syncBadges() {

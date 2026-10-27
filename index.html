@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Laszos — Mantelería y blancos personalizados</title>
-  <meta name="description" content="Manteles, servilletas, caminos, paños y toallas con estampados de autor y monograma personalizado.">
+  <meta name="description" content="Manteles, servilletas, caminos, paños, pañoletas y toallas con estampados de autor y monograma personalizado.">
   <link rel="icon" href="assets/brand/logo-ink.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
         <a href="#tienda" data-filter-link="servilletas">Servilletas</a>
         <a href="#tienda" data-filter-link="caminos">Caminos</a>
         <a href="#tienda" data-filter-link="personalizados">Personalizados</a>
-        <a href="#toallas">Toallas</a>
+        <a href="#toallas">Pañoletas</a>
       </nav>
       <a class="header__logo" href="#top" aria-label="Laszos, inicio">
         <img src="assets/brand/logo-ink.png" alt="Laszos">
@@ -70,7 +70,8 @@
       <a href="#tienda" data-filter-link="caminos">Caminos e individuales</a>
       <a href="#tienda" data-filter-link="panos">Paños de cocina</a>
       <a href="#tienda" data-filter-link="personalizados">Personalizados</a>
-      <a href="#toallas">Toallas</a>
+      <a href="#tienda" data-filter-link="panoletas">Pañoletas</a>
+      <a href="#tienda" data-filter-link="toallas">Toallas</a>
       <a href="#monograma">Crea tu monograma</a>
       <a href="#ocasiones">Ocasiones</a>
     </div>
@@ -78,32 +79,16 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__board" data-board aria-label="Piezas destacadas"></div>
       <div class="hero__copy">
-        <p class="eyebrow">Mantelería de autor</p>
-        <h1>El arte de <em>vestir</em> la mesa</h1>
-        <p class="hero__lead">Manteles, servilletas y blancos con estampados pintados para Laszos, terminados a mano y listos para llevar tu monograma.</p>
+        <p class="eyebrow">Mantelería de autor · Hecho a mano</p>
+        <h1 id="hero-title">El arte de <em>vestir</em> la mesa</h1>
+        <p class="hero__lead">Estampados pintados para Laszos en manteles, servilletas, pañoletas y toallas, listos para llevar tu monograma.</p>
         <div class="hero__ctas">
-          <a href="#tienda" class="btn btn--ink">Comprar la colección</a>
-          <a href="#monograma" class="btn btn--ghost">Personalizar una pieza</a>
+          <a href="#tienda" class="btn btn--ink">Explorar la tienda</a>
+          <a href="#monograma" class="btn btn--ghost">Crear mi monograma</a>
         </div>
-        <ul class="hero__facts">
-          <li><strong>+50</strong><span>diseños exclusivos</span></li>
-          <li><strong>6</strong><span>familias de producto</span></li>
-          <li><strong>1</strong><span>monograma, el tuyo</span></li>
-        </ul>
-      </div>
-      <div class="hero__media">
-        <img src="assets/img/escenas/hero.jpg" alt="Mesa puesta en el jardín con mantel botánico y platos rosas" class="hero__img" fetchpriority="high">
-        <img src="assets/img/escenas/boda.jpg" alt="Mesa de boda con servilletas monogramadas" class="hero__img hero__img--small" loading="lazy">
-        <button class="hero__card" data-quick="mantel-aves-del-tropico">
-          <img src="assets/img/productos/mantel-aves-del-tropico.jpg" alt="">
-          <span>
-            <small>Nuevo</small>
-            <b>Mantel Aves del Trópico</b>
-            <em data-price-of="mantel-aves-del-tropico"></em>
-          </span>
-        </button>
       </div>
     </section>
 
@@ -152,9 +137,9 @@
     <section class="towels" id="toallas" aria-labelledby="towels-title">
       <div class="towels__head">
         <div>
-          <p class="eyebrow eyebrow--light">Colección de verano</p>
-          <h2 id="towels-title">Toallas <em>Laszos</em></h2>
-          <p>Doce estampados firmados, del jardín a la playa. Cada toalla lleva el lazo de la casa bordado en la esquina.</p>
+          <p class="eyebrow eyebrow--light">Estampados firmados</p>
+          <h2 id="towels-title">Pañoletas y toallas <em>Laszos</em></h2>
+          <p>Pañoletas cuadradas que también visten la mesa como servilleta, y toallas largas para la playa. Todas llevan la firma de Laszos.</p>
         </div>
         <div class="towels__nav">
           <button class="icon-btn icon-btn--light" aria-label="Anterior" data-towel-prev><svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></svg></button>
@@ -261,7 +246,7 @@
       <p>Mantelería, servilletas y blancos personalizados.</p>
     </div>
     <div class="footer__cols">
-      <div><h4>Tienda</h4><a href="#tienda" data-filter-link="manteles">Manteles</a><a href="#tienda" data-filter-link="servilletas">Servilletas</a><a href="#tienda" data-filter-link="caminos">Caminos e individuales</a><a href="#tienda" data-filter-link="panos">Paños de cocina</a><a href="#toallas">Toallas</a></div>
+      <div><h4>Tienda</h4><a href="#tienda" data-filter-link="manteles">Manteles</a><a href="#tienda" data-filter-link="servilletas">Servilletas</a><a href="#tienda" data-filter-link="caminos">Caminos e individuales</a><a href="#tienda" data-filter-link="panos">Paños de cocina</a><a href="#tienda" data-filter-link="panoletas">Pañoletas</a><a href="#tienda" data-filter-link="toallas">Toallas</a></div>
       <div><h4>Servicios</h4><a href="#monograma">Monogramas</a><a href="#ocasiones">Eventos y bodas</a><a href="#tienda" data-filter-link="personalizados">Regalos personalizados</a></div>
       <div><h4>Laszos</h4><a href="#" data-contact>Contacto por WhatsApp</a><a href="#">Instagram</a><a href="#">Cuidados de la tela</a></div>
     </div>
@@ -288,8 +273,8 @@
       <div class="drawer__body" data-cart-items></div>
       <div class="drawer__foot">
         <div class="drawer__total"><span>Subtotal</span><strong data-cart-total>$0</strong></div>
-        <p class="drawer__note">Confirmamos existencias, personalización y envío por WhatsApp.</p>
-        <button class="btn btn--ink btn--block" data-checkout>Enviar pedido por WhatsApp</button>
+        <p class="drawer__note">Al finalizar se abre WhatsApp con tu pedido para Sandra, quien te enviará el método de pago y confirmará el envío.</p>
+        <button class="btn btn--ink btn--block" data-checkout>Finalizar compra por WhatsApp</button>
       </div>
     </aside>
   </div>

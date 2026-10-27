@@ -452,25 +452,8 @@ window.LASZOS_PRODUCTS = [
     "name": "Miel",
     "hex": "#e2b56c",
     "img": "assets/img/productos/serv-jacquard-miel.jpg"
-   },
-   {
-    "name": "Salvia",
-    "hex": "#b9c0b4",
-    "img": "assets/img/productos/serv-jacquard-salvia.jpg"
    }
   ]
- },
- {
-  "id": "toalla-escudo-s",
-  "cat": "personalizados",
-  "name": "Toalla de Visitas Escudo",
-  "line": "Con tu inicial · azul francés",
-  "price": 65000,
-  "imgs": [
-   "assets/img/productos/toalla-escudo-s.jpg",
-   "assets/img/productos/toalla-escudo-s-2.jpg"
-  ],
-  "tag": "Personalizable"
  },
  {
   "id": "toalla-a-tapiz",
@@ -495,18 +478,6 @@ window.LASZOS_PRODUCTS = [
   "tag": "Personalizable"
  },
  {
-  "id": "toalla-castillo",
-  "cat": "personalizados",
-  "name": "Toalla Infantil Castillo",
-  "line": "Con nombre o inicial",
-  "price": 75000,
-  "imgs": [
-   "assets/img/productos/toalla-castillo.jpg",
-   "assets/img/productos/toalla-castillo-2.jpg"
-  ],
-  "tag": "Personalizable"
- },
- {
   "id": "toalla-guirnalda",
   "cat": "personalizados",
   "name": "Toalla de Visitas Guirnalda",
@@ -515,17 +486,6 @@ window.LASZOS_PRODUCTS = [
   "imgs": [
    "assets/img/productos/toalla-guirnalda.jpg",
    "assets/img/productos/toalla-guirnalda-2.jpg"
-  ],
-  "tag": "Personalizable"
- },
- {
-  "id": "toalla-escudo-celeste",
-  "cat": "personalizados",
-  "name": "Toalla de Visitas Celeste",
-  "line": "Escudo para monograma",
-  "price": 65000,
-  "imgs": [
-   "assets/img/productos/toalla-escudo-celeste.jpg"
   ],
   "tag": "Personalizable"
  },
@@ -552,17 +512,6 @@ window.LASZOS_PRODUCTS = [
   "tag": "Personalizable"
  },
  {
-  "id": "serv-monograma-rosa",
-  "cat": "personalizados",
-  "name": "Servilletas Monograma Rosa",
-  "line": "Juego de 6 · escudo floral",
-  "price": 220000,
-  "imgs": [
-   "assets/img/productos/serv-monograma-rosa.jpg"
-  ],
-  "tag": "Personalizable"
- },
- {
   "id": "serv-festoneada",
   "cat": "personalizados",
   "name": "Servilleta Festoneada con Moño",
@@ -573,126 +522,126 @@ window.LASZOS_PRODUCTS = [
   ]
  },
  {
-  "id": "toalla-dalias",
-  "cat": "toallas",
-  "name": "Toalla Dalias",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
+  "id": "panoleta-dalias",
+  "cat": "panoletas",
+  "name": "Pañoleta Dalias",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
   "imgs": [
-   "assets/img/toallas/dalias.jpg"
+   "assets/img/panoletas/dalias.jpg"
   ]
  },
  {
-  "id": "toalla-escarabajos",
-  "cat": "toallas",
-  "name": "Toalla Escarabajos",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
+  "id": "panoleta-escarabajos",
+  "cat": "panoletas",
+  "name": "Pañoleta Escarabajos",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
   "imgs": [
-   "assets/img/toallas/escarabajos.jpg"
+   "assets/img/panoletas/escarabajos.jpg"
   ]
  },
  {
-  "id": "toalla-aves-del-paraiso",
-  "cat": "toallas",
-  "name": "Toalla Aves del Paraíso",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
+  "id": "panoleta-aves-del-paraiso",
+  "cat": "panoletas",
+  "name": "Pañoleta Aves del Paraíso",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
   "imgs": [
-   "assets/img/toallas/aves-del-paraiso.jpg"
+   "assets/img/panoletas/aves-del-paraiso.jpg"
   ]
+ },
+ {
+  "id": "panoleta-carruaje",
+  "cat": "panoletas",
+  "name": "Pañoleta Carruaje",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/panoletas/carruaje.jpg"
+  ]
+ },
+ {
+  "id": "panoleta-globos",
+  "cat": "panoletas",
+  "name": "Pañoleta Globos",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/panoletas/globos.jpg"
+  ]
+ },
+ {
+  "id": "panoleta-orquideas",
+  "cat": "panoletas",
+  "name": "Pañoleta Orquídeas",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/panoletas/orquideas.jpg"
+  ]
+ },
+ {
+  "id": "panoleta-pensamientos",
+  "cat": "panoletas",
+  "name": "Pañoleta Pensamientos",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/panoletas/pensamientos.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "panoleta-tulipanes",
+  "cat": "panoletas",
+  "name": "Pañoleta Tulipanes",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/panoletas/tulipanes.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "panoleta-leopardo",
+  "cat": "panoletas",
+  "name": "Pañoleta Leopardo",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/panoletas/leopardo.jpg"
+  ],
+  "tag": "Nuevo"
  },
  {
   "id": "toalla-jirafas",
   "cat": "toallas",
   "name": "Toalla Jirafas",
-  "line": "Toalla de playa · estampado Laszos",
+  "line": "Toalla · estampado Laszos",
   "price": 180000,
   "imgs": [
    "assets/img/toallas/jirafas.jpg"
   ]
  },
  {
-  "id": "toalla-carruaje",
-  "cat": "toallas",
-  "name": "Toalla Carruaje",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
-  "imgs": [
-   "assets/img/toallas/carruaje.jpg"
-  ]
- },
- {
   "id": "toalla-tigre",
   "cat": "toallas",
   "name": "Toalla Tigre",
-  "line": "Toalla de playa · estampado Laszos",
+  "line": "Toalla · estampado Laszos",
   "price": 180000,
   "imgs": [
    "assets/img/toallas/tigre.jpg"
   ]
  },
  {
-  "id": "toalla-globos",
-  "cat": "toallas",
-  "name": "Toalla Globos",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
-  "imgs": [
-   "assets/img/toallas/globos.jpg"
-  ]
- },
- {
   "id": "toalla-surf",
   "cat": "toallas",
   "name": "Toalla Surf",
-  "line": "Toalla de playa · estampado Laszos",
+  "line": "Toalla · estampado Laszos",
   "price": 180000,
   "imgs": [
    "assets/img/toallas/surf.jpg"
   ]
- },
- {
-  "id": "toalla-orquideas",
-  "cat": "toallas",
-  "name": "Toalla Orquídeas",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
-  "imgs": [
-   "assets/img/toallas/orquideas.jpg"
-  ]
- },
- {
-  "id": "toalla-pensamientos",
-  "cat": "toallas",
-  "name": "Toalla Pensamientos",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
-  "imgs": [
-   "assets/img/toallas/pensamientos.jpg"
-  ],
-  "tag": "Nuevo"
- },
- {
-  "id": "toalla-tulipanes",
-  "cat": "toallas",
-  "name": "Toalla Tulipanes",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
-  "imgs": [
-   "assets/img/toallas/tulipanes.jpg"
-  ],
-  "tag": "Nuevo"
- },
- {
-  "id": "toalla-leopardo",
-  "cat": "toallas",
-  "name": "Toalla Leopardo",
-  "line": "Toalla de playa · estampado Laszos",
-  "price": 180000,
-  "imgs": [
-   "assets/img/toallas/leopardo.jpg"
-  ],
-  "tag": "Nuevo"
  }
 ];
