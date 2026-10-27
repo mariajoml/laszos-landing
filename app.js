@@ -1,7 +1,7 @@
 (() => {
   // Número de WhatsApp para recibir pedidos (formato internacional, solo dígitos). Vacío = el cliente elige el contacto.
   const WHATSAPP = '';
-  const MONOGRAM_PRICE = 180;
+  const MONOGRAM_PRICE = 25000;
 
   const PRODUCTS = window.LASZOS_PRODUCTS || [];
   const byId = Object.fromEntries(PRODUCTS.map(p => [p.id, p]));
@@ -26,7 +26,7 @@
 
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
-  const money = n => '$' + n.toLocaleString('es-MX') + ' MXN';
+  const money = n => '$' + n.toLocaleString('es-CO') + ' COP';
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
   const store = {

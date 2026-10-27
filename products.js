@@ -1,11 +1,11 @@
-// Catálogo Laszos. Precios de ejemplo: edítalos aquí.
+// Catálogo Laszos. Precios de ejemplo en pesos colombianos (COP): edítalos aquí.
 window.LASZOS_PRODUCTS = [
  {
   "id": "mantel-aves-del-tropico",
   "cat": "manteles",
   "name": "Mantel Aves del Trópico",
   "line": "Redondo · colección Jardín",
-  "price": 3650,
+  "price": 520000,
   "imgs": [
    "assets/img/productos/mantel-aves-del-tropico.jpg",
    "assets/img/productos/mantel-aves-del-tropico-2.jpg"
@@ -17,7 +17,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Flor de Loto",
   "line": "Rectangular · cenefa verde",
-  "price": 3250,
+  "price": 460000,
   "imgs": [
    "assets/img/productos/mantel-flor-de-loto.jpg"
   ]
@@ -27,7 +27,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Jardín de Aves",
   "line": "Rectangular · fondo marfil",
-  "price": 3250,
+  "price": 460000,
   "imgs": [
    "assets/img/productos/mantel-jardin-de-aves.jpg"
   ]
@@ -37,7 +37,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Guirnalda Silvestre",
   "line": "Rectangular · ribete marino",
-  "price": 3250,
+  "price": 460000,
   "imgs": [
    "assets/img/productos/mantel-guirnalda-silvestre.jpg"
   ]
@@ -47,7 +47,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Toile Azul",
   "line": "Rectangular · azul porcelana",
-  "price": 3450,
+  "price": 490000,
   "imgs": [
    "assets/img/productos/mantel-toile-azul.jpg",
    "assets/img/productos/mantel-toile-azul-2.jpg"
@@ -59,7 +59,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Follaje",
   "line": "Redondo · faldón verde",
-  "price": 3650,
+  "price": 520000,
   "imgs": [
    "assets/img/productos/mantel-follaje.jpg"
   ]
@@ -69,7 +69,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Cenefa Imperial",
   "line": "Rectangular · gris perla",
-  "price": 3250,
+  "price": 460000,
   "imgs": [
    "assets/img/productos/mantel-cenefa-gris.jpg"
   ]
@@ -79,7 +79,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Botánico Salvia",
   "line": "Rectangular · salvia",
-  "price": 3450,
+  "price": 490000,
   "imgs": [
    "assets/img/productos/mantel-botanico-salvia.jpg",
    "assets/img/productos/mantel-botanico-salvia-2.jpg"
@@ -90,7 +90,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "caminos",
   "name": "Camino Toile Selva",
   "line": "Camino de mesa · 40 × 220 cm",
-  "price": 1290,
+  "price": 165000,
   "imgs": [
    "assets/img/productos/camino-toile-selva.jpg"
   ]
@@ -100,7 +100,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "caminos",
   "name": "Camino Palmas",
   "line": "Camino de mesa · 40 × 220 cm",
-  "price": 1290,
+  "price": 165000,
   "imgs": [
    "assets/img/productos/camino-palmas.jpg"
   ]
@@ -110,7 +110,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "caminos",
   "name": "Individuales Limón y Mayólica",
   "line": "Juego de 4",
-  "price": 1390,
+  "price": 175000,
   "imgs": [
    "assets/img/productos/individual-limones.jpg",
    "assets/img/productos/individual-limones-2.jpg"
@@ -122,7 +122,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "caminos",
   "name": "Individuales Palmas",
   "line": "Juego de 4 + servilletas",
-  "price": 1590,
+  "price": 195000,
   "imgs": [
    "assets/img/productos/individual-palmas.jpg"
   ]
@@ -132,7 +132,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "name": "Paño Ecuestre Verde",
   "line": "Paño de cocina",
-  "price": 340,
+  "price": 45000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-verde.jpg"
   ]
@@ -142,7 +142,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "name": "Paño Ecuestre Azul",
   "line": "Paño de cocina",
-  "price": 340,
+  "price": 45000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-azul.jpg"
   ]
@@ -152,7 +152,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "name": "Paño Ecuestre Perla",
   "line": "Paño de cocina",
-  "price": 340,
+  "price": 45000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-perla.jpg"
   ]
@@ -162,7 +162,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "name": "Paño Bodegón a Cuadros",
   "line": "Paño de cocina",
-  "price": 340,
+  "price": 45000,
   "imgs": [
    "assets/img/productos/pano-bodegon.jpg"
   ]
@@ -172,7 +172,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "name": "Paño Limonero Azul",
   "line": "Paño de cocina",
-  "price": 340,
+  "price": 45000,
   "imgs": [
    "assets/img/productos/pano-limonero-azul.jpg"
   ]
@@ -182,7 +182,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "name": "Paño Limonero Amarillo",
   "line": "Paño de cocina",
-  "price": 340,
+  "price": 45000,
   "imgs": [
    "assets/img/productos/pano-limonero-amarillo.jpg"
   ]
@@ -192,7 +192,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "name": "Paño Gallo de Campo",
   "line": "Paño de cocina",
-  "price": 340,
+  "price": 45000,
   "imgs": [
    "assets/img/productos/pano-gallo.jpg"
   ]
@@ -202,7 +202,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "name": "Paño Pasionaria",
   "line": "Paño de cocina",
-  "price": 340,
+  "price": 45000,
   "imgs": [
    "assets/img/productos/pano-pasionaria.jpg"
   ]
@@ -212,7 +212,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Limones y Flores",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-limones.jpg",
    "assets/img/productos/serv-limones-2.jpg"
@@ -223,7 +223,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Porcelana Azul",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-porcelana.jpg",
    "assets/img/productos/serv-porcelana-2.jpg"
@@ -235,7 +235,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Rama de Primavera",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-ramas.jpg",
    "assets/img/productos/serv-ramas-2.jpg"
@@ -246,7 +246,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Cardo Azul",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-cardo.jpg",
    "assets/img/productos/serv-cardo-2.jpg"
@@ -257,7 +257,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Escarabajo Coral",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-escarabajo.jpg",
    "assets/img/productos/serv-escarabajo-2.jpg"
@@ -268,7 +268,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Palmera Verde",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-palmera.jpg",
    "assets/img/productos/serv-palmera-2.jpg"
@@ -279,7 +279,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Cabaña Nevada",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-cabana.jpg",
    "assets/img/productos/serv-cabana-2.jpg"
@@ -291,7 +291,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Flor Silvestre",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-flor-silvestre.jpg",
    "assets/img/productos/serv-flor-silvestre-2.jpg"
@@ -302,7 +302,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Zorro del Bosque",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-zorro.jpg",
    "assets/img/productos/serv-zorro-2.jpg"
@@ -313,7 +313,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Palma Coral",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-palma-coral.jpg",
    "assets/img/productos/serv-palma-coral-2.jpg"
@@ -324,7 +324,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Hojas de Otoño",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-otono.jpg",
    "assets/img/productos/serv-otono-2.jpg"
@@ -335,7 +335,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Mariposas y Sellos",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-mariposas.jpg",
    "assets/img/productos/serv-mariposas-2.jpg"
@@ -346,7 +346,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Lirio Rojo",
   "line": "Juego de 6 · estampadas",
-  "price": 1450,
+  "price": 180000,
   "imgs": [
    "assets/img/productos/serv-lirio.jpg"
   ]
@@ -356,7 +356,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Greca",
   "line": "Juego de 6 · lisas con greca",
-  "price": 1150,
+  "price": 150000,
   "imgs": [
    "assets/img/productos/serv-greca-olivo.jpg"
   ],
@@ -418,7 +418,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "servilletas",
   "name": "Servilletas Jacquard Floral",
   "line": "Juego de 6 · jacquard tono sobre tono",
-  "price": 1290,
+  "price": 165000,
   "imgs": [
    "assets/img/productos/serv-jacquard-lila.jpg"
   ],
@@ -465,7 +465,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Toalla de Visitas Escudo",
   "line": "Con tu inicial · azul francés",
-  "price": 520,
+  "price": 65000,
   "imgs": [
    "assets/img/productos/toalla-escudo-s.jpg",
    "assets/img/productos/toalla-escudo-s-2.jpg"
@@ -477,7 +477,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Toalla de Visitas Tapiz",
   "line": "Con tu inicial · cenefa tapiz",
-  "price": 520,
+  "price": 65000,
   "imgs": [
    "assets/img/productos/toalla-a-tapiz.jpg"
   ],
@@ -488,7 +488,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Toalla de Visitas Laurel",
   "line": "Monograma de dos letras",
-  "price": 560,
+  "price": 75000,
   "imgs": [
    "assets/img/productos/toalla-laurel.jpg"
   ],
@@ -499,7 +499,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Toalla Infantil Castillo",
   "line": "Con nombre o inicial",
-  "price": 560,
+  "price": 75000,
   "imgs": [
    "assets/img/productos/toalla-castillo.jpg",
    "assets/img/productos/toalla-castillo-2.jpg"
@@ -511,7 +511,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Toalla de Visitas Guirnalda",
   "line": "Marco floral para monograma",
-  "price": 520,
+  "price": 65000,
   "imgs": [
    "assets/img/productos/toalla-guirnalda.jpg",
    "assets/img/productos/toalla-guirnalda-2.jpg"
@@ -523,7 +523,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Toalla de Visitas Celeste",
   "line": "Escudo para monograma",
-  "price": 520,
+  "price": 65000,
   "imgs": [
    "assets/img/productos/toalla-escudo-celeste.jpg"
   ],
@@ -534,7 +534,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Servilletas Monograma Toile",
   "line": "Juego de 6 · con tu inicial",
-  "price": 1690,
+  "price": 220000,
   "imgs": [
    "assets/img/productos/serv-monograma-s.jpg"
   ],
@@ -545,7 +545,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Servilletas Monograma Laurel",
   "line": "Juego de 6 · dos letras",
-  "price": 1690,
+  "price": 220000,
   "imgs": [
    "assets/img/productos/serv-monograma-laurel.jpg"
   ],
@@ -556,7 +556,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Servilletas Monograma Rosa",
   "line": "Juego de 6 · escudo floral",
-  "price": 1690,
+  "price": 220000,
   "imgs": [
    "assets/img/productos/serv-monograma-rosa.jpg"
   ],
@@ -567,7 +567,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "personalizados",
   "name": "Servilleta Festoneada con Moño",
   "line": "Juego de 6 · ribete verde",
-  "price": 1590,
+  "price": 195000,
   "imgs": [
    "assets/img/productos/serv-festoneada.jpg"
   ]
@@ -577,7 +577,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Dalias",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/dalias.jpg"
   ]
@@ -587,7 +587,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Escarabajos",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/escarabajos.jpg"
   ]
@@ -597,7 +597,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Aves del Paraíso",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/aves-del-paraiso.jpg"
   ]
@@ -607,7 +607,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Jirafas",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/jirafas.jpg"
   ]
@@ -617,7 +617,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Carruaje",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/carruaje.jpg"
   ]
@@ -627,7 +627,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Tigre",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/tigre.jpg"
   ]
@@ -637,7 +637,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Globos",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/globos.jpg"
   ]
@@ -647,7 +647,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Surf",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/surf.jpg"
   ]
@@ -657,7 +657,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Orquídeas",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/orquideas.jpg"
   ]
@@ -667,7 +667,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Pensamientos",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/pensamientos.jpg"
   ],
@@ -678,7 +678,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Tulipanes",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/tulipanes.jpg"
   ],
@@ -689,7 +689,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "toallas",
   "name": "Toalla Leopardo",
   "line": "Toalla de playa · estampado Laszos",
-  "price": 1350,
+  "price": 180000,
   "imgs": [
    "assets/img/toallas/leopardo.jpg"
   ],

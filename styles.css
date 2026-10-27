@@ -356,6 +356,11 @@ h1 em, h2 em { color: var(--accent); }
   .cats__grid { grid-template-columns: repeat(3, 1fr); }
   .grid { grid-template-columns: repeat(3, 1fr); }
   .header__link { display: none; }
+  .header__nav { gap: 20px; }
+}
+@media (max-width: 1080px) {
+  .header__nav { display: none; }
+  .header__menu { display: grid; }
 }
 @media (max-width: 960px) {
   .header__nav { display: none; }
