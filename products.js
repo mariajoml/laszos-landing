@@ -160,7 +160,7 @@ window.LASZOS_PRODUCTS = [
   "price": 86000,
   "imgs": [
    "assets/img/navidad/velitas-chiro.jpg",
-   "assets/img/navidad/velitas-chiro-uso.jpg"
+   "assets/img/navidad/velitas-chiro-uso.jpg?v=20261112002735"
   ],
   "tag": "Navidad",
   "trio": true
@@ -470,7 +470,7 @@ window.LASZOS_PRODUCTS = [
   "imgs": [
    "assets/img/navidad/cascanueces-chiro.jpg",
    "assets/img/navidad/cascanueces-chiro-uso.jpg",
-   "assets/img/navidad/velitas-chiro-uso.jpg",
+   "assets/img/navidad/velitas-chiro-uso.jpg?v=20261112002735",
    "assets/img/navidad/porcelana-chiro-uso.jpg"
   ],
   "tag": "Pack"
