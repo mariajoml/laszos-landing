@@ -627,7 +627,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "art": true,
   "trio": true,
-  "name": "Limpión Ecuestre",
+  "name": "Limpión Ecuestre Gris",
   "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
@@ -641,12 +641,68 @@ window.LASZOS_PRODUCTS = [
   "cat": "panos",
   "art": true,
   "trio": true,
-  "name": "Chiro Ecuestre",
+  "name": "Chiro Ecuestre Gris",
   "line": "Chiro · se venden de a 3, combinables con limpiones",
   "price": 86000,
   "imgs": [
    "assets/img/limpiones/chiro-ecuestre.jpg",
    "assets/img/limpiones/chiro-ecuestre-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "limpion-ecuestre-azul",
+  "cat": "panos",
+  "art": true,
+  "trio": true,
+  "name": "Limpión Ecuestre Azul",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
+  "price": 86000,
+  "imgs": [
+   "assets/img/limpiones/limpion-ecuestre-azul.jpg",
+   "assets/img/limpiones/limpion-ecuestre-azul-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "chiro-ecuestre-azul",
+  "cat": "panos",
+  "art": true,
+  "trio": true,
+  "name": "Chiro Ecuestre Azul",
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
+  "price": 86000,
+  "imgs": [
+   "assets/img/limpiones/chiro-ecuestre-azul.jpg",
+   "assets/img/limpiones/chiro-ecuestre-azul-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "limpion-ecuestre-verde",
+  "cat": "panos",
+  "art": true,
+  "trio": true,
+  "name": "Limpión Ecuestre Verde",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
+  "price": 86000,
+  "imgs": [
+   "assets/img/limpiones/limpion-ecuestre-verde.jpg",
+   "assets/img/limpiones/limpion-ecuestre-verde-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "chiro-ecuestre-verde",
+  "cat": "panos",
+  "art": true,
+  "trio": true,
+  "name": "Chiro Ecuestre Verde",
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
+  "price": 86000,
+  "imgs": [
+   "assets/img/limpiones/chiro-ecuestre-verde.jpg",
+   "assets/img/limpiones/chiro-ecuestre-verde-uso.jpg"
   ],
   "tag": "Nuevo"
  },
