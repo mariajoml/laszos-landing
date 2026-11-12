@@ -368,6 +368,9 @@ h1 em, h2 em { color: var(--accent); }
 /* Diseños planos (estampados): se muestran completos sobre papel */
 .is-art { background: #f3eadc !important; }
 .is-art img { object-fit: contain !important; padding: 7%; filter: drop-shadow(0 12px 14px rgba(29, 27, 25, .16)); }
+.is-art img.is-photo, .xpiece__img img.is-photo { object-fit: cover !important; padding: 0; filter: none; }
+.is-art .qv__thumbs img { padding: 6%; filter: none; }
+.is-art .qv__thumbs img.is-photo { padding: 0; }
 .pin__img.is-art img { transform: none; }
 .pin:hover .pin__img.is-art img { transform: scale(1.04); }
 
@@ -384,7 +387,9 @@ h1 em, h2 em { color: var(--accent); }
 .xcol__card .link-arrow { color: var(--tone); }
 .xcol__pieces { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; padding: clamp(16px, 2vw, 24px); align-items: start; }
 .xpiece { text-align: left; }
-.xpiece__img { display: block; aspect-ratio: 4 / 5; background: #f3eadc; overflow: hidden; margin-bottom: 10px; }
+.xpiece__img { position: relative; display: block; aspect-ratio: 4 / 5; background: #f3eadc; overflow: hidden; margin-bottom: 10px; }
+.xpiece__img img.is-photo { position: absolute; inset: 0; opacity: 0; transition: opacity .5s var(--ease), transform .8s var(--ease); }
+.xpiece:hover .xpiece__img img.is-photo { opacity: 1; }
 .xpiece__img img { width: 100%; height: 100%; object-fit: contain; padding: 8%; filter: drop-shadow(0 10px 12px rgba(29, 27, 25, .16)); transition: transform .8s var(--ease); }
 .xpiece:hover .xpiece__img img { transform: scale(1.06); }
 .xpiece b { display: block; font: 500 18px/1.2 var(--serif); }

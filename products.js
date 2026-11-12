@@ -10,7 +10,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/navidad/cascanueces-panoleta.jpg"
+   "assets/img/navidad/cascanueces-panoleta.jpg",
+   "assets/img/navidad/cascanueces-panoleta-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -23,7 +24,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Servilletas 48 × 48 cm · estampadas",
   "price": 76000,
   "imgs": [
-   "assets/img/navidad/cascanueces-servilleta.jpg"
+   "assets/img/navidad/cascanueces-servilleta.jpg",
+   "assets/img/navidad/cascanueces-servilleta-uso.jpg"
   ],
   "tag": "Navidad",
   "sizes": [
@@ -46,7 +48,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Rectangular · colección Navidad",
   "price": null,
   "imgs": [
-   "assets/img/navidad/cascanueces-mantel.jpg"
+   "assets/img/navidad/cascanueces-mantel.jpg",
+   "assets/img/navidad/cascanueces-mantel-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -59,7 +62,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Limpión · se venden de a 3, todos distintos",
   "price": 86000,
   "imgs": [
-   "assets/img/navidad/cascanueces-limpion.jpg"
+   "assets/img/navidad/cascanueces-limpion.jpg",
+   "assets/img/navidad/cascanueces-limpion-uso.jpg"
   ],
   "tag": "Navidad",
   "trio": true
@@ -73,7 +77,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Chiro de cocina · estampado continuo",
   "price": null,
   "imgs": [
-   "assets/img/navidad/cascanueces-chiro.jpg"
+   "assets/img/navidad/cascanueces-chiro.jpg",
+   "assets/img/navidad/cascanueces-chiro-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -86,7 +91,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/navidad/velitas-panoleta.jpg"
+   "assets/img/navidad/velitas-panoleta.jpg",
+   "assets/img/navidad/velitas-panoleta-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -99,7 +105,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Servilletas 48 × 48 cm · estampadas",
   "price": 76000,
   "imgs": [
-   "assets/img/navidad/velitas-servilleta.jpg"
+   "assets/img/navidad/velitas-servilleta.jpg",
+   "assets/img/navidad/velitas-servilleta-uso.jpg"
   ],
   "tag": "Navidad",
   "sizes": [
@@ -122,7 +129,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Rectangular · colección Navidad",
   "price": null,
   "imgs": [
-   "assets/img/navidad/velitas-mantel.jpg"
+   "assets/img/navidad/velitas-mantel.jpg",
+   "assets/img/navidad/velitas-mantel-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -135,7 +143,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Limpión · se venden de a 3, todos distintos",
   "price": 86000,
   "imgs": [
-   "assets/img/navidad/velitas-limpion.jpg"
+   "assets/img/navidad/velitas-limpion.jpg",
+   "assets/img/navidad/velitas-limpion-uso.jpg"
   ],
   "tag": "Navidad",
   "trio": true
@@ -149,7 +158,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Chiro de cocina · estampado continuo",
   "price": null,
   "imgs": [
-   "assets/img/navidad/velitas-chiro.jpg"
+   "assets/img/navidad/velitas-chiro.jpg",
+   "assets/img/navidad/velitas-chiro-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -162,7 +172,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/navidad/porcelana-panoleta.jpg"
+   "assets/img/navidad/porcelana-panoleta.jpg",
+   "assets/img/navidad/porcelana-panoleta-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -175,7 +186,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Servilletas 48 × 48 cm · estampadas",
   "price": 76000,
   "imgs": [
-   "assets/img/navidad/porcelana-servilleta.jpg"
+   "assets/img/navidad/porcelana-servilleta.jpg",
+   "assets/img/navidad/porcelana-servilleta-uso.jpg"
   ],
   "tag": "Navidad",
   "sizes": [
@@ -198,7 +210,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Rectangular · colección Navidad",
   "price": null,
   "imgs": [
-   "assets/img/navidad/porcelana-mantel.jpg"
+   "assets/img/navidad/porcelana-mantel.jpg",
+   "assets/img/navidad/porcelana-mantel-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -211,7 +224,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Limpión · se venden de a 3, todos distintos",
   "price": 86000,
   "imgs": [
-   "assets/img/navidad/porcelana-limpion.jpg"
+   "assets/img/navidad/porcelana-limpion.jpg",
+   "assets/img/navidad/porcelana-limpion-uso.jpg"
   ],
   "tag": "Navidad",
   "trio": true
@@ -225,7 +239,8 @@ window.LASZOS_PRODUCTS = [
   "line": "Chiro de cocina · estampado continuo",
   "price": null,
   "imgs": [
-   "assets/img/navidad/porcelana-chiro.jpg"
+   "assets/img/navidad/porcelana-chiro.jpg",
+   "assets/img/navidad/porcelana-chiro-uso.jpg"
   ],
   "tag": "Navidad"
  },
@@ -244,7 +259,8 @@ window.LASZOS_PRODUCTS = [
   ],
   "imgs": [
    "assets/img/navidad/cascanueces-panoleta.jpg",
-   "assets/img/navidad/cascanueces-servilleta.jpg"
+   "assets/img/navidad/cascanueces-panoleta-uso.jpg",
+   "assets/img/navidad/cascanueces-servilleta-uso.jpg"
   ],
   "tag": "Pack"
  },
@@ -263,7 +279,8 @@ window.LASZOS_PRODUCTS = [
   ],
   "imgs": [
    "assets/img/navidad/velitas-panoleta.jpg",
-   "assets/img/navidad/velitas-servilleta.jpg"
+   "assets/img/navidad/velitas-panoleta-uso.jpg",
+   "assets/img/navidad/velitas-servilleta-uso.jpg"
   ],
   "tag": "Pack"
  },
@@ -282,7 +299,8 @@ window.LASZOS_PRODUCTS = [
   ],
   "imgs": [
    "assets/img/navidad/porcelana-panoleta.jpg",
-   "assets/img/navidad/porcelana-servilleta.jpg"
+   "assets/img/navidad/porcelana-panoleta-uso.jpg",
+   "assets/img/navidad/porcelana-servilleta-uso.jpg"
   ],
   "tag": "Pack"
  },
@@ -301,7 +319,9 @@ window.LASZOS_PRODUCTS = [
   ],
   "imgs": [
    "assets/img/navidad/cascanueces-limpion.jpg",
-   "assets/img/navidad/porcelana-limpion.jpg"
+   "assets/img/navidad/cascanueces-limpion-uso.jpg",
+   "assets/img/navidad/velitas-limpion-uso.jpg",
+   "assets/img/navidad/porcelana-limpion-uso.jpg"
   ],
   "tag": "Pack"
  },

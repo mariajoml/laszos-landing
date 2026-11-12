@@ -139,7 +139,7 @@
     return `<article class="card" style="animation-delay:${(i % 12) * 40}ms">
       <div class="card__media${artCls(p)}" data-quick="${p.id}">
         ${tag}
-        ${imgs.slice(0, 2).map((src, k) => `<img src="${src}" alt="${k ? '' : esc(p.name)}" loading="lazy">`).join('')}
+        ${imgs.slice(0, 2).map((src, k) => `<img src="${src}" alt="${k ? '' : esc(p.name)}" loading="lazy"${k ? ' class="is-photo"' : ''}>`).join('')}
         <button class="icon-btn card__fav ${state.favs.has(p.id) ? 'is-on' : ''}" aria-label="Guardar en favoritos" data-fav="${p.id}">
           <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
         </button>
@@ -234,7 +234,7 @@
         </div>
       </div>
       <div class="xcol__pieces">${pieces.map(p => `<button class="xpiece" data-quick="${p.id}">
-        <span class="xpiece__img"><img src="${p.imgs[0]}" alt="${esc(p.name)}" loading="lazy"></span>
+        <span class="xpiece__img"><img src="${p.imgs[0]}" alt="${esc(p.name)}" loading="lazy">${p.imgs[1] ? `<img class="is-photo" src="${p.imgs[1]}" alt="" loading="lazy">` : ''}</span>
         <b>${esc(p.name.replace(' ' + c.name, ''))}</b><span>${esc(priceLabel(p))}</span></button>`).join('')}</div>
       ${packHTML}
     </article>`;
@@ -262,8 +262,8 @@
       const imgs = p.variants ? [p.variants[vi].img] : p.imgs;
       $('[data-qv]').innerHTML = `
         <div class="qv__media${artCls(p)}">
-          <img class="qv__main" src="${imgs[imgIndex] || imgs[0]}" alt="${esc(p.name)}">
-          ${imgs.length > 1 ? `<div class="qv__thumbs">${imgs.map((s, k) => `<button class="${k === imgIndex ? 'is-on' : ''}" data-thumb="${k}"><img src="${s}" alt=""></button>`).join('')}</div>` : ''}
+          <img class="qv__main${imgs[imgIndex] && imgIndex > 0 ? ' is-photo' : ''}" src="${imgs[imgIndex] || imgs[0]}" alt="${esc(p.name)}">
+          ${imgs.length > 1 ? `<div class="qv__thumbs">${imgs.map((s, k) => `<button class="${k === imgIndex ? 'is-on' : ''}" data-thumb="${k}"><img src="${s}" alt=""${k ? ' class="is-photo"' : ''}></button>`).join('')}</div>` : ''}
         </div>
         <div class="qv__info">
           <p class="eyebrow" style="margin:0">${esc(catLabel)}</p>
