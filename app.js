@@ -21,7 +21,7 @@
   const CATS = [
     { id: 'navidad', label: 'Navidad ✦', short: 'Navidad', cover: 'assets/img/navidad/cascanueces-panoleta.jpg', art: true },
     { id: 'manteles', label: 'Manteles', cover: 'assets/img/productos/mantel-flor-de-loto.jpg' },
-    { id: 'servilletas', label: 'Servilletas', cover: 'assets/img/productos/serv-porcelana.jpg' },
+    { id: 'servilletas', label: 'Servilletas', cover: 'assets/img/servilletas/limones-higos-uso.jpg' },
     { id: 'caminos', label: 'Caminos e individuales', short: 'Caminos', cover: 'assets/img/productos/individual-limones.jpg' },
     { id: 'panos', label: 'Limpiones y chiros', short: 'Limpiones', cover: 'assets/img/limpiones/limpion-huerto-uso.jpg' },
     { id: 'personalizados', label: 'Personalizados', cover: 'assets/img/productos/toalla-laurel.jpg' },
