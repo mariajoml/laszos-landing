@@ -446,6 +446,17 @@ s.was { color: var(--muted); font-size: .85em; margin-right: 2px; }
   .xpiece { scroll-snap-align: start; }
 }
 
+.qv__media { position: relative; }
+.qv__arrow {
+  position: absolute; top: calc(50% - 60px); z-index: 2; width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(251, 248, 243, .9); font: 28px/1 var(--serif); display: grid; place-items: center; box-shadow: 0 6px 16px -8px rgba(29, 27, 25, .4);
+}
+.qv__arrow--prev { left: 12px; } .qv__arrow--next { right: 12px; }
+.qv__arrow:hover { background: var(--ink); color: var(--ivory); }
+.qv__thumbs button { width: 76px; height: auto; display: flex; flex-direction: column; gap: 4px; }
+.qv__thumbs button img { height: 92px; }
+.qv__thumbs small { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-align: center; }
+
 /* Responsive */
 @media (max-width: 1180px) {
   .cats__grid { grid-template-columns: repeat(4, 1fr); }

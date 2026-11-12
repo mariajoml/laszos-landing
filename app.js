@@ -23,7 +23,7 @@
     { id: 'manteles', label: 'Manteles', cover: 'assets/img/productos/mantel-flor-de-loto.jpg' },
     { id: 'servilletas', label: 'Servilletas', cover: 'assets/img/productos/serv-porcelana.jpg' },
     { id: 'caminos', label: 'Caminos e individuales', short: 'Caminos', cover: 'assets/img/productos/individual-limones.jpg' },
-    { id: 'panos', label: 'Paños de cocina', short: 'Paños', cover: 'assets/img/productos/pano-limonero-azul.jpg' },
+    { id: 'panos', label: 'Limpiones y chiros', short: 'Limpiones', cover: 'assets/img/limpiones/limpion-huerto-uso.jpg' },
     { id: 'personalizados', label: 'Personalizados', cover: 'assets/img/productos/toalla-laurel.jpg' },
     { id: 'panoletas', label: 'Pañoletas', cover: 'assets/img/panoletas/tulipanes.jpg' },
     { id: 'toallas', label: 'Toallas', cover: 'assets/img/toallas/tigre.jpg' },
@@ -32,7 +32,7 @@
     manteles: 'Estampado de autor sobre tela de caída suave, con dobladillo terminado a mano. Disponible en otras medidas sobre pedido.',
     servilletas: 'Juego de servilletas con dobladillo fino, pensadas para lucir dobladas en triángulo o sobre el plato.',
     caminos: 'Para vestir la mesa sin cubrirla del todo. Combínalos con servilletas de la misma colección.',
-    panos: 'Paño de cocina estampado, tan bonito para secar como para servir el pan.',
+    panos: 'Estampado de autor, tan bonito para secar como para servir el pan.',
     personalizados: 'Lo bordamos o estampamos con tus iniciales. Te enviamos una prueba antes de producir.',
     panoletas: 'Pañoleta cuadrada con estampado exclusivo y la firma de Laszos. Úsala al cuello, como servilleta grande o para cubrir la panera.',
     toallas: 'Toalla estampada con diseño exclusivo y el lazo de Laszos en la esquina. Ideal para playa, alberca o regalo.',
@@ -129,8 +129,14 @@
   }
   function imgsOf(p) {
     if (p.variants) { const v = p.variants[state.variant[p.id] || 0]; return [v.img]; }
-    return p.imgs;
+    return photoFirst(p);
   }
+  // En los diseños con mockup (art), primero se muestra la foto de cómo se ve y después el diseño plano.
+  function photoFirst(p) {
+    if (!p.art || p.imgs.length < 2) return p.imgs;
+    return [...p.imgs.slice(1), p.imgs[0]];
+  }
+  const isPhoto = (p, src) => !!p.art && src !== p.imgs[0];
   function card(p, i) {
     const imgs = imgsOf(p);
     const tag = p.tag ? `<span class="card__tag ${p.tag === 'Más vendido' ? 'card__tag--accent' : ''}${p.tag === 'Navidad' ? 'card__tag--xmas' : ''}">${esc(p.tag)}</span>` : '';
@@ -139,7 +145,7 @@
     return `<article class="card" style="animation-delay:${(i % 12) * 40}ms">
       <div class="card__media${artCls(p)}" data-quick="${p.id}">
         ${tag}
-        ${imgs.slice(0, 2).map((src, k) => `<img src="${src}" alt="${k ? '' : esc(p.name)}" loading="lazy"${k ? ' class="is-photo"' : ''}>`).join('')}
+        ${imgs.slice(0, 2).map((src, k) => `<img src="${src}" alt="${k ? '' : esc(p.name)}" loading="lazy"${isPhoto(p, src) ? ' class="is-photo"' : ''}>`).join('')}
         <button class="icon-btn card__fav ${state.favs.has(p.id) ? 'is-on' : ''}" aria-label="Guardar en favoritos" data-fav="${p.id}">
           <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
         </button>
@@ -206,7 +212,7 @@
   /* ---------- Towels rail ---------- */
   const rail = $('[data-towels]');
   rail.innerHTML = PRODUCTS.filter(p => p.cat === 'panoletas' || p.cat === 'toallas').map(p =>
-    `<button class="towel" data-quick="${p.id}"><div class="towel__img${artCls(p)}"><img src="${p.imgs[0]}" alt="${esc(p.name)}" loading="lazy"></div>
+    `<button class="towel" data-quick="${p.id}"><div class="towel__img${artCls(p)}"><img src="${photoFirst(p)[0]}" alt="${esc(p.name)}" loading="lazy"${isPhoto(p, photoFirst(p)[0]) ? ' class="is-photo"' : ''}></div>
      <div class="towel__meta"><b>${esc(p.name)}</b><span>${esc(priceLabel(p))}</span></div></button>`).join('');
   const step = () => rail.firstElementChild.getBoundingClientRect().width + 18;
   $('[data-towel-prev]').addEventListener('click', () => rail.scrollBy({ left: -step(), behavior: 'smooth' }));
@@ -266,11 +272,12 @@
     const col = COLLECTIONS.find(c => c.id === p.col);
     const catLabel = (CATS.find(c => c.id === p.cat)?.label || '') + (col ? ` · Navidad ${col.name}` : '');
     function draw() {
-      const imgs = p.variants ? [p.variants[vi].img] : p.imgs;
+      const imgs = p.variants ? [p.variants[vi].img] : photoFirst(p);
       $('[data-qv]').innerHTML = `
         <div class="qv__media${artCls(p)}">
-          <img class="qv__main${imgs[imgIndex] && imgIndex > 0 ? ' is-photo' : ''}" src="${imgs[imgIndex] || imgs[0]}" alt="${esc(p.name)}">
-          ${imgs.length > 1 ? `<div class="qv__thumbs">${imgs.map((s, k) => `<button class="${k === imgIndex ? 'is-on' : ''}" data-thumb="${k}"><img src="${s}" alt=""${k ? ' class="is-photo"' : ''}></button>`).join('')}</div>` : ''}
+          <img class="qv__main${isPhoto(p, imgs[imgIndex] || imgs[0]) ? ' is-photo' : ''}" src="${imgs[imgIndex] || imgs[0]}" alt="${esc(p.name)}">
+          ${imgs.length > 1 ? `<button class="qv__arrow qv__arrow--prev" data-step="-1" aria-label="Imagen anterior">‹</button><button class="qv__arrow qv__arrow--next" data-step="1" aria-label="Imagen siguiente">›</button>` : ''}
+          ${imgs.length > 1 ? `<div class="qv__thumbs">${imgs.map((s, k) => `<button class="${k === imgIndex ? 'is-on' : ''}" data-thumb="${k}"><img src="${s}" alt=""${isPhoto(p, s) ? ' class="is-photo"' : ''}><small>${p.art ? (isPhoto(p, s) ? 'Así se ve' : 'Diseño') : `Foto ${k + 1}`}</small></button>`).join('')}</div>` : ''}
         </div>
         <div class="qv__info">
           <p class="eyebrow" style="margin:0">${esc(catLabel)}</p>
@@ -301,6 +308,7 @@
     $('[data-qv]').onclick = e => {
       const t = e.target;
       if (t.closest('[data-thumb]')) { imgIndex = +t.closest('[data-thumb]').dataset.thumb; draw(); }
+      if (t.closest('[data-step]')) { const n = p.variants ? 1 : p.imgs.length; imgIndex = (imgIndex + +t.closest('[data-step]').dataset.step + n) % n; draw(); }
       if (t.closest('[data-sw]')) { vi = +t.closest('[data-sw]').dataset.sw; state.variant[id] = vi; imgIndex = 0; draw(); render(); }
       if (t.closest('[data-q]')) { qty = Math.max(1, qty + +t.closest('[data-q]').dataset.q); draw(); }
       if (t.closest('[data-qv-fav]')) { toggleFav(id); draw(); }

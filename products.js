@@ -623,92 +623,60 @@ window.LASZOS_PRODUCTS = [
   ]
  },
  {
-  "id": "pano-ecuestre-verde",
+  "id": "limpion-ecuestre",
   "cat": "panos",
-  "name": "Paño Ecuestre Verde",
+  "art": true,
+  "trio": true,
+  "name": "Limpión Ecuestre",
   "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
-   "assets/img/productos/pano-ecuestre-verde.jpg"
+   "assets/img/limpiones/limpion-ecuestre.jpg",
+   "assets/img/limpiones/limpion-ecuestre-uso.jpg"
   ],
-  "trio": true
+  "tag": "Nuevo"
  },
  {
-  "id": "pano-ecuestre-azul",
+  "id": "chiro-ecuestre",
   "cat": "panos",
-  "name": "Paño Ecuestre Azul",
-  "line": "Limpión · se venden de a 3, combinables con chiros",
+  "art": true,
+  "trio": true,
+  "name": "Chiro Ecuestre",
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
   "price": 86000,
   "imgs": [
-   "assets/img/productos/pano-ecuestre-azul.jpg"
+   "assets/img/limpiones/chiro-ecuestre.jpg",
+   "assets/img/limpiones/chiro-ecuestre-uso.jpg"
   ],
-  "trio": true
+  "tag": "Nuevo"
  },
  {
-  "id": "pano-ecuestre-perla",
+  "id": "limpion-huerto",
   "cat": "panos",
-  "name": "Paño Ecuestre Perla",
+  "art": true,
+  "trio": true,
+  "name": "Limpión Huerto",
   "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
-   "assets/img/productos/pano-ecuestre-perla.jpg"
+   "assets/img/limpiones/limpion-huerto.jpg",
+   "assets/img/limpiones/limpion-huerto-uso.jpg"
   ],
-  "trio": true
+  "tag": "Nuevo"
  },
  {
-  "id": "pano-bodegon",
+  "id": "chiro-huerto",
   "cat": "panos",
-  "name": "Paño Bodegón a Cuadros",
-  "line": "Limpión · se venden de a 3, combinables con chiros",
+  "art": true,
+  "trio": true,
+  "name": "Chiro Huerto",
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
   "price": 86000,
   "imgs": [
-   "assets/img/productos/pano-bodegon.jpg"
+   "assets/img/limpiones/chiro-huerto.jpg",
+   "assets/img/limpiones/chiro-huerto-uso.jpg"
   ],
-  "trio": true
- },
- {
-  "id": "pano-limonero-azul",
-  "cat": "panos",
-  "name": "Paño Limonero Azul",
-  "line": "Limpión · se venden de a 3, combinables con chiros",
-  "price": 86000,
-  "imgs": [
-   "assets/img/productos/pano-limonero-azul.jpg"
-  ],
-  "trio": true
- },
- {
-  "id": "pano-limonero-amarillo",
-  "cat": "panos",
-  "name": "Paño Limonero Amarillo",
-  "line": "Limpión · se venden de a 3, combinables con chiros",
-  "price": 86000,
-  "imgs": [
-   "assets/img/productos/pano-limonero-amarillo.jpg"
-  ],
-  "trio": true
- },
- {
-  "id": "pano-gallo",
-  "cat": "panos",
-  "name": "Paño Gallo de Campo",
-  "line": "Limpión · se venden de a 3, combinables con chiros",
-  "price": 86000,
-  "imgs": [
-   "assets/img/productos/pano-gallo.jpg"
-  ],
-  "trio": true
- },
- {
-  "id": "pano-pasionaria",
-  "cat": "panos",
-  "name": "Paño Pasionaria",
-  "line": "Limpión · se venden de a 3, combinables con chiros",
-  "price": 86000,
-  "imgs": [
-   "assets/img/productos/pano-pasionaria.jpg"
-  ],
-  "trio": true
+  "tag": "Nuevo"
  },
  {
   "id": "serv-limones",
