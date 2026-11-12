@@ -46,7 +46,7 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Mantel Cascanueces",
   "line": "Rectangular · colección Navidad",
-  "price": null,
+  "price": 250000,
   "imgs": [
    "assets/img/navidad/cascanueces-mantel.jpg",
    "assets/img/navidad/cascanueces-mantel-uso.jpg"
@@ -59,7 +59,7 @@ window.LASZOS_PRODUCTS = [
   "col": "cascanueces",
   "art": true,
   "name": "Limpión Cascanueces",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/navidad/cascanueces-limpion.jpg",
@@ -74,13 +74,14 @@ window.LASZOS_PRODUCTS = [
   "col": "cascanueces",
   "art": true,
   "name": "Chiro Cascanueces",
-  "line": "Chiro de cocina · estampado continuo",
-  "price": null,
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
+  "price": 86000,
   "imgs": [
    "assets/img/navidad/cascanueces-chiro.jpg",
    "assets/img/navidad/cascanueces-chiro-uso.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "trio": true
  },
  {
   "id": "nav-velitas-panoleta",
@@ -127,7 +128,7 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Mantel Noche de Velitas",
   "line": "Rectangular · colección Navidad",
-  "price": null,
+  "price": 250000,
   "imgs": [
    "assets/img/navidad/velitas-mantel.jpg",
    "assets/img/navidad/velitas-mantel-uso.jpg"
@@ -140,7 +141,7 @@ window.LASZOS_PRODUCTS = [
   "col": "velitas",
   "art": true,
   "name": "Limpión Noche de Velitas",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/navidad/velitas-limpion.jpg",
@@ -155,13 +156,14 @@ window.LASZOS_PRODUCTS = [
   "col": "velitas",
   "art": true,
   "name": "Chiro Noche de Velitas",
-  "line": "Chiro de cocina · estampado continuo",
-  "price": null,
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
+  "price": 86000,
   "imgs": [
    "assets/img/navidad/velitas-chiro.jpg",
    "assets/img/navidad/velitas-chiro-uso.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "trio": true
  },
  {
   "id": "nav-porcelana-panoleta",
@@ -208,7 +210,7 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Mantel Porcelana",
   "line": "Rectangular · colección Navidad",
-  "price": null,
+  "price": 250000,
   "imgs": [
    "assets/img/navidad/porcelana-mantel.jpg",
    "assets/img/navidad/porcelana-mantel-uso.jpg"
@@ -221,7 +223,7 @@ window.LASZOS_PRODUCTS = [
   "col": "porcelana",
   "art": true,
   "name": "Limpión Porcelana",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/navidad/porcelana-limpion.jpg",
@@ -236,13 +238,14 @@ window.LASZOS_PRODUCTS = [
   "col": "porcelana",
   "art": true,
   "name": "Chiro Porcelana",
-  "line": "Chiro de cocina · estampado continuo",
-  "price": null,
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
+  "price": 86000,
   "imgs": [
    "assets/img/navidad/porcelana-chiro.jpg",
    "assets/img/navidad/porcelana-chiro-uso.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "trio": true
  },
  {
   "id": "nav-cascanueces-pack-regalo",
@@ -305,6 +308,66 @@ window.LASZOS_PRODUCTS = [
   "tag": "Pack"
  },
  {
+  "id": "nav-cascanueces-pack-mesa",
+  "cat": "packs",
+  "col": "cascanueces",
+  "art": true,
+  "name": "Pack Mesa Cascanueces",
+  "line": "Mantel + juego de 6 servilletas",
+  "price": 339000,
+  "list": 364000,
+  "includes": [
+   "Mantel rectangular",
+   "Juego de 6 servilletas 48 × 48 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/cascanueces-mantel.jpg",
+   "assets/img/navidad/cascanueces-mantel-uso.jpg",
+   "assets/img/navidad/cascanueces-servilleta-uso.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-velitas-pack-mesa",
+  "cat": "packs",
+  "col": "velitas",
+  "art": true,
+  "name": "Pack Mesa Noche de Velitas",
+  "line": "Mantel + juego de 6 servilletas",
+  "price": 339000,
+  "list": 364000,
+  "includes": [
+   "Mantel rectangular",
+   "Juego de 6 servilletas 48 × 48 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/velitas-mantel.jpg",
+   "assets/img/navidad/velitas-mantel-uso.jpg",
+   "assets/img/navidad/velitas-servilleta-uso.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-porcelana-pack-mesa",
+  "cat": "packs",
+  "col": "porcelana",
+  "art": true,
+  "name": "Pack Mesa Porcelana",
+  "line": "Mantel + juego de 6 servilletas",
+  "price": 339000,
+  "list": 364000,
+  "includes": [
+   "Mantel rectangular",
+   "Juego de 6 servilletas 48 × 48 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/porcelana-mantel.jpg",
+   "assets/img/navidad/porcelana-mantel-uso.jpg",
+   "assets/img/navidad/porcelana-servilleta-uso.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
   "id": "nav-trio-limpiones",
   "cat": "packs",
   "col": "trio",
@@ -330,7 +393,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Aves del Trópico",
   "line": "Redondo · colección Jardín",
-  "price": 520000,
+  "price": 250000,
   "imgs": [
    "assets/img/productos/mantel-aves-del-tropico.jpg"
   ],
@@ -341,7 +404,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Flor de Loto",
   "line": "Rectangular · cenefa verde",
-  "price": 460000,
+  "price": 250000,
   "imgs": [
    "assets/img/productos/mantel-flor-de-loto.jpg"
   ]
@@ -351,7 +414,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Guirnalda Silvestre",
   "line": "Rectangular · ribete marino",
-  "price": 460000,
+  "price": 250000,
   "imgs": [
    "assets/img/productos/mantel-guirnalda-silvestre.jpg"
   ]
@@ -361,7 +424,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Follaje",
   "line": "Redondo · faldón verde",
-  "price": 520000,
+  "price": 250000,
   "imgs": [
    "assets/img/productos/mantel-follaje.jpg"
   ]
@@ -371,7 +434,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Cenefa Imperial",
   "line": "Rectangular · gris perla",
-  "price": 460000,
+  "price": 250000,
   "imgs": [
    "assets/img/productos/mantel-cenefa-gris.jpg"
   ]
@@ -381,7 +444,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "manteles",
   "name": "Mantel Botánico Salvia",
   "line": "Rectangular · salvia",
-  "price": 490000,
+  "price": 250000,
   "imgs": [
    "assets/img/productos/mantel-botanico-salvia.jpg"
   ]
@@ -432,7 +495,7 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-ecuestre-verde",
   "cat": "panos",
   "name": "Paño Ecuestre Verde",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-verde.jpg"
@@ -443,7 +506,7 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-ecuestre-azul",
   "cat": "panos",
   "name": "Paño Ecuestre Azul",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-azul.jpg"
@@ -454,7 +517,7 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-ecuestre-perla",
   "cat": "panos",
   "name": "Paño Ecuestre Perla",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-perla.jpg"
@@ -465,7 +528,7 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-bodegon",
   "cat": "panos",
   "name": "Paño Bodegón a Cuadros",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/productos/pano-bodegon.jpg"
@@ -476,7 +539,7 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-limonero-azul",
   "cat": "panos",
   "name": "Paño Limonero Azul",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/productos/pano-limonero-azul.jpg"
@@ -487,7 +550,7 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-limonero-amarillo",
   "cat": "panos",
   "name": "Paño Limonero Amarillo",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/productos/pano-limonero-amarillo.jpg"
@@ -498,7 +561,7 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-gallo",
   "cat": "panos",
   "name": "Paño Gallo de Campo",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/productos/pano-gallo.jpg"
@@ -509,7 +572,7 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-pasionaria",
   "cat": "panos",
   "name": "Paño Pasionaria",
-  "line": "Limpión · se venden de a 3, todos distintos",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
   "price": 86000,
   "imgs": [
    "assets/img/productos/pano-pasionaria.jpg"

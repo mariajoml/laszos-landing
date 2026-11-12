@@ -216,14 +216,13 @@
   const KIND_ORDER = ['panoleta', 'servilleta', 'mantel', 'limpion', 'chiro'];
   $('[data-xmas]').innerHTML = COLLECTIONS.map(c => {
     const pieces = KIND_ORDER.map(k => byId[`nav-${c.id}-${k}`]).filter(Boolean);
-    const pack = byId[`nav-${c.id}-pack-regalo`];
-    const packHTML = pack ? `<div class="xpack">
-        <div><p class="eyebrow">Pack regalo · ahorras ${money(pack.list - pack.price)}</p>
+    const packHTML = ['mesa', 'regalo'].map(k => byId[`nav-${c.id}-pack-${k}`]).filter(Boolean).map(pack => `<div class="xpack">
+        <div><p class="eyebrow">${esc(pack.name.replace(' ' + c.name, ''))} · ahorras ${money(pack.list - pack.price)}</p>
           <b>${esc(pack.line)}</b></div>
         <div class="xpack__buy"><span>${priceHTML(pack)}</span>
           <button class="btn btn--ink" data-xadd="${pack.id}">Agregar pack</button>
           <button class="link-arrow" data-quick="${pack.id}">Ver</button></div>
-      </div>` : '';
+      </div>`).join('');
     return `<article class="xcol" style="--pattern:url('${c.pattern}');--tone:${c.tone}">
       <div class="xcol__intro">
         <div class="xcol__card">
@@ -240,7 +239,7 @@
     </article>`;
   }).join('') + (byId['nav-trio-limpiones'] ? (() => { const t = byId['nav-trio-limpiones']; return `<div class="xtrio">
       <div class="xtrio__imgs">${['cascanueces', 'velitas', 'porcelana'].map(c => `<img src="assets/img/navidad/${c}-limpion.jpg" alt="" loading="lazy">`).join('')}</div>
-      <div><p class="eyebrow">Pack</p><h3>${esc(t.name)}</h3><p>Un limpión de cada colección: Cascanueces, Noche de Velitas y Porcelana. Los limpiones se venden de a 3, todos distintos.</p>
+      <div><p class="eyebrow">Pack</p><h3>${esc(t.name)}</h3><p>Un limpión de cada colección: Cascanueces, Noche de Velitas y Porcelana. Limpiones y chiros se venden de a 3 y puedes combinarlos.</p>
         <div class="xpack__buy"><span>${priceHTML(t)}</span><button class="btn btn--ink" data-xadd="${t.id}">Agregar trío</button></div></div>
     </div>`; })() : '');
   $('[data-xmas]').addEventListener('click', e => {
@@ -271,13 +270,13 @@
           <p class="qv__price">${p.sizes ? money(unitPrice(p, si)) : priceHTML(p)}${p.list ? ` <small class="save">Ahorras ${money(p.list - p.price)}</small>` : ''}</p>
           <p class="qv__desc">${esc(p.line)}. ${DESCRIPTIONS[p.cat] || ''}</p>
           ${p.includes ? `<ul class="qv__incl">${p.includes.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
-          ${p.trio ? `<p class="qv__note">Los limpiones se venden de a 3, todos distintos: elige 3 diseños y pagas ${money(TRIO_PRICE)} por el set.</p>` : ''}
+          ${p.trio ? `<p class="qv__note">Limpiones y chiros se venden de a 3 y puedes combinarlos: elige 3 y pagas ${money(TRIO_PRICE)} por el set.</p>` : ''}
           ${p.sizes ? `<p class="qv__label">Presentación</p>
             <div class="seg">${p.sizes.map((s, k) => `<button type="button" class="${k === si ? 'is-on' : ''}" data-size="${k}">${esc(s.name)} · ${money(s.price)}</button>`).join('')}</div>` : ''}
           ${p.variants ? `<p class="qv__label">Color: <b>${esc(p.variants[vi].name)}</b></p>
             <div class="qv__swatches">${p.variants.map((v, k) => `<button class="swatch ${k === vi ? 'is-on' : ''}" style="background:${v.hex}" aria-label="${esc(v.name)}" title="${esc(v.name)}" data-sw="${k}"></button>`).join('')}</div>` : ''}
           ${askOnly(p) ? `<button class="btn btn--ink" data-qv-ask>Consultar precio por WhatsApp</button>` : `
-          <p class="qv__label">Cantidad${p.trio ? ' (limpiones)' : p.sizes ? ' (juegos)' : ''}</p>
+          <p class="qv__label">Cantidad${p.trio ? ' (unidades)' : p.sizes ? ' (juegos)' : ''}</p>
           <div class="qv__buy">
             <div class="qty"><button data-q="-1" aria-label="Menos">−</button><span>${qty}</span><button data-q="1" aria-label="Más">+</button></div>
             <button class="btn btn--ink" data-qv-add>${p.trio ? 'Agregar a la bolsa' : `Agregar · ${money(unitPrice(p, si) * qty)}`}</button>
@@ -318,13 +317,13 @@
     line ? line.qty += qty : state.cart.push({ key, id, vi, si, qty });
     saveCart();
     const n = trioCount();
-    toast(p.trio && n % 3 ? `${p.name} en tu bolsa · elige ${3 - n % 3} limpión${3 - n % 3 > 1 ? 'es' : ''} más para completar el set de 3`
+    toast(p.trio && n % 3 ? `${p.name} en tu bolsa · elige ${3 - n % 3} más (limpión o chiro) para completar el set de 3`
       : `${p.name}${p.variants ? ' · ' + p.variants[vi].name : ''}${p.sizes ? ' · ' + p.sizes[si].name : ''} en tu bolsa`);
   }
   function lineInfo(l) {
     if (l.mono) return { name: `Monograma “${l.mono.text}”`, sub: `${l.mono.styleLabel} · hilo ${l.mono.thread} · tela ${l.mono.cloth}`, price: MONOGRAM_PRICE };
     const p = byId[l.id]; if (!p || askOnly(p)) return null;
-    const sub = p.variants ? p.variants[l.vi].name : p.sizes ? p.sizes[l.si || 0].name : p.trio ? 'Limpión (set de 3)' : p.line;
+    const sub = p.variants ? p.variants[l.vi].name : p.sizes ? p.sizes[l.si || 0].name : p.trio ? 'Set de 3 combinable' : p.line;
     return { name: p.name, sub, trio: !!p.trio, price: p.trio ? 0 : unitPrice(p, l.si || 0), img: p.variants ? p.variants[l.vi].img : p.imgs[0] };
   }
   // Limpiones: se cobran por sets de 3 (aunque sean de diseños distintos).
@@ -346,7 +345,7 @@
           <div class="line__right"><span>${info.trio ? 'En set' : money(info.price * l.qty)}</span><button class="line__remove" data-rm="${i}">Quitar</button></div></div>`;
       }).join('');
       const n = trioCount();
-      if (n) body.innerHTML += `<div class="trio-sum"><div><b>Limpiones: ${n} → ${trioSets()} set${trioSets() > 1 ? 's' : ''} de 3</b>
+      if (n) body.innerHTML += `<div class="trio-sum"><div><b>Limpiones y chiros: ${n} → ${trioSets()} set${trioSets() > 1 ? 's' : ''} de 3</b>
         ${n % 3 ? `<p>${3 - n % 3 > 1 ? `Te faltan ${3 - n % 3} para completar el set: agrégalos` : 'Te falta 1 para completar el set: agrégalo'}, el precio es el mismo.</p>` : ''}</div>
         <span>${money(trioSets() * TRIO_PRICE)}</span></div>`;
     }
@@ -365,7 +364,7 @@
   document.addEventListener('click', e => { if (e.target.closest('[data-close-cart]')) closeCart(); });
   $('[data-checkout]').addEventListener('click', () => {
     const lines = state.cart.map(l => { const i = lineInfo(l); return `• ${l.qty} × ${i.name} (${i.sub})${i.trio ? '' : ` — ${money(i.price * l.qty)}`}`; });
-    if (trioCount()) lines.push(`• Limpiones: ${trioCount()} unidades = ${trioSets()} set(s) de 3 — ${money(trioSets() * TRIO_PRICE)}`);
+    if (trioCount()) lines.push(`• Limpiones y chiros: ${trioCount()} unidades = ${trioSets()} set(s) de 3 — ${money(trioSets() * TRIO_PRICE)}`);
     const total = cartTotal();
     const text = `Hola Sandra, quiero hacer este pedido en Laszos:\n\n${lines.join('\n')}\n\nTotal: ${money(total)}\n\n¿Me envías el método de pago, por favor?`;
     window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
