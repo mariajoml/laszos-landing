@@ -216,7 +216,7 @@
   const KIND_ORDER = ['panoleta', 'servilleta', 'mantel', 'limpion', 'chiro'];
   $('[data-xmas]').innerHTML = COLLECTIONS.map(c => {
     const pieces = KIND_ORDER.map(k => byId[`nav-${c.id}-${k}`]).filter(Boolean);
-    const packHTML = ['mesa', 'regalo'].map(k => byId[`nav-${c.id}-pack-${k}`]).filter(Boolean).map(pack => `<div class="xpack">
+    const packHTML = ['completa', 'mesa', 'regalo'].map(k => byId[`nav-${c.id}-pack-${k}`]).filter(Boolean).map(pack => `<div class="xpack">
         <div><p class="eyebrow">${esc(pack.name.replace(' ' + c.name, ''))} · ahorras ${money(pack.list - pack.price)}</p>
           <b>${esc(pack.line)}</b></div>
         <div class="xpack__buy"><span>${priceHTML(pack)}</span>
@@ -237,11 +237,19 @@
         <b>${esc(p.name.replace(' ' + c.name, ''))}</b><span>${esc(priceLabel(p))}</span></button>`).join('')}</div>
       ${packHTML}
     </article>`;
-  }).join('') + (byId['nav-trio-limpiones'] ? (() => { const t = byId['nav-trio-limpiones']; return `<div class="xtrio">
-      <div class="xtrio__imgs">${['cascanueces', 'velitas', 'porcelana'].map(c => `<img src="assets/img/navidad/${c}-limpion.jpg" alt="" loading="lazy">`).join('')}</div>
-      <div><p class="eyebrow">Pack</p><h3>${esc(t.name)}</h3><p>Un limpión de cada colección: Cascanueces, Noche de Velitas y Porcelana. Limpiones y chiros se venden de a 3 y puedes combinarlos.</p>
-        <div class="xpack__buy"><span>${priceHTML(t)}</span><button class="btn btn--ink" data-xadd="${t.id}">Agregar trío</button></div></div>
-    </div>`; })() : '');
+  }).join('') + (() => {
+    // Packs que mezclan las tres colecciones
+    const cross = ['nav-trio-panoletas', 'nav-trio-servilletas', 'nav-trio-limpiones', 'nav-trio-chiros'].map(id => byId[id]).filter(Boolean);
+    if (!cross.length) return '';
+    return `<div class="xcross">
+      <div class="xcross__head"><p class="eyebrow">Packs para regalar</p><h3>Una pieza de <em>cada colección</em></h3></div>
+      <div class="xcross__grid">${cross.map(t => `<article class="xtrio">
+        <button class="xtrio__imgs" data-quick="${t.id}" aria-label="Ver ${esc(t.name)}">${t.imgs.slice(1, 4).map(s => `<img src="${s}" alt="" loading="lazy">`).join('')}</button>
+        <div><h4>${esc(t.name)}</h4><p>${esc(t.line)}${t.list ? ` · ahorras ${money(t.list - t.price)}` : ''}</p>
+          <div class="xpack__buy"><span>${priceHTML(t)}</span><button class="btn btn--ink" data-xadd="${t.id}">Agregar</button></div></div>
+      </article>`).join('')}</div>
+    </div>`;
+  })();
   $('[data-xmas]').addEventListener('click', e => {
     const xa = e.target.closest('[data-xadd]');
     if (xa) { addToCart(xa.dataset.xadd, 0, 1); return; }

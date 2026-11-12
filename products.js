@@ -389,6 +389,137 @@ window.LASZOS_PRODUCTS = [
   "tag": "Pack"
  },
  {
+  "id": "nav-cascanueces-pack-completa",
+  "cat": "packs",
+  "col": "cascanueces",
+  "art": true,
+  "name": "Colección Completa Cascanueces",
+  "line": "Mantel + juego de 6 servilletas + pañoleta",
+  "price": 459000,
+  "list": 499000,
+  "includes": [
+   "Mantel rectangular",
+   "Juego de 6 servilletas 48 × 48 cm",
+   "Pañoleta 72 × 72 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/cascanueces-mantel.jpg",
+   "assets/img/navidad/cascanueces-mantel-uso.jpg",
+   "assets/img/navidad/cascanueces-panoleta-uso.jpg",
+   "assets/img/navidad/cascanueces-servilleta-uso.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-velitas-pack-completa",
+  "cat": "packs",
+  "col": "velitas",
+  "art": true,
+  "name": "Colección Completa Noche de Velitas",
+  "line": "Mantel + juego de 6 servilletas + pañoleta",
+  "price": 459000,
+  "list": 499000,
+  "includes": [
+   "Mantel rectangular",
+   "Juego de 6 servilletas 48 × 48 cm",
+   "Pañoleta 72 × 72 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/velitas-mantel.jpg",
+   "assets/img/navidad/velitas-mantel-uso.jpg",
+   "assets/img/navidad/velitas-panoleta-uso.jpg",
+   "assets/img/navidad/velitas-servilleta-uso.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-porcelana-pack-completa",
+  "cat": "packs",
+  "col": "porcelana",
+  "art": true,
+  "name": "Colección Completa Porcelana",
+  "line": "Mantel + juego de 6 servilletas + pañoleta",
+  "price": 459000,
+  "list": 499000,
+  "includes": [
+   "Mantel rectangular",
+   "Juego de 6 servilletas 48 × 48 cm",
+   "Pañoleta 72 × 72 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/porcelana-mantel.jpg",
+   "assets/img/navidad/porcelana-mantel-uso.jpg",
+   "assets/img/navidad/porcelana-panoleta-uso.jpg",
+   "assets/img/navidad/porcelana-servilleta-uso.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-trio-chiros",
+  "cat": "packs",
+  "col": "trio",
+  "art": true,
+  "name": "Trío de chiros navideños",
+  "line": "Uno de cada colección",
+  "price": 86000,
+  "includes": [
+   "Chiro Cascanueces",
+   "Chiro Noche de Velitas",
+   "Chiro Porcelana"
+  ],
+  "imgs": [
+   "assets/img/navidad/cascanueces-chiro.jpg",
+   "assets/img/navidad/cascanueces-chiro-uso.jpg",
+   "assets/img/navidad/velitas-chiro-uso.jpg",
+   "assets/img/navidad/porcelana-chiro-uso.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-trio-panoletas",
+  "cat": "packs",
+  "col": "trio",
+  "art": true,
+  "name": "Trío de pañoletas navideñas",
+  "line": "Una de cada colección",
+  "price": 369000,
+  "includes": [
+   "Pañoleta Cascanueces",
+   "Pañoleta Noche de Velitas",
+   "Pañoleta Porcelana"
+  ],
+  "imgs": [
+   "assets/img/navidad/cascanueces-panoleta.jpg",
+   "assets/img/navidad/cascanueces-panoleta-uso.jpg",
+   "assets/img/navidad/velitas-panoleta-uso.jpg",
+   "assets/img/navidad/porcelana-panoleta-uso.jpg"
+  ],
+  "tag": "Pack",
+  "list": 405000
+ },
+ {
+  "id": "nav-trio-servilletas",
+  "cat": "packs",
+  "col": "trio",
+  "art": true,
+  "name": "Las 3 mesas de Navidad",
+  "line": "Un juego de 4 servilletas de cada colección",
+  "price": 209000,
+  "includes": [
+   "Juego de 4 servilletas Cascanueces",
+   "Juego de 4 servilletas Noche de Velitas",
+   "Juego de 4 servilletas Porcelana"
+  ],
+  "imgs": [
+   "assets/img/navidad/cascanueces-servilleta.jpg",
+   "assets/img/navidad/cascanueces-servilleta-uso.jpg",
+   "assets/img/navidad/velitas-servilleta-uso.jpg",
+   "assets/img/navidad/porcelana-servilleta-uso.jpg"
+  ],
+  "tag": "Pack",
+  "list": 228000
+ },
+ {
   "id": "mantel-aves-del-tropico",
   "cat": "manteles",
   "name": "Mantel Aves del Trópico",
