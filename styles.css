@@ -388,12 +388,11 @@ h1 em, h2 em { color: var(--accent); }
 .xcol__pieces { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; padding: clamp(16px, 2vw, 24px); align-items: start; }
 .xpiece { text-align: left; }
 .xpiece__img { position: relative; display: block; aspect-ratio: 4 / 5; background: #f3eadc; overflow: hidden; margin-bottom: 10px; }
-.xpiece__img img.is-photo { position: absolute; inset: 0; opacity: 1; transition: opacity .5s var(--ease), transform .8s var(--ease); }
-.xpiece:hover .xpiece__img img.is-photo { opacity: 0; }
+.xpiece__img img.is-photo { position: absolute; inset: 0; opacity: 0; transition: opacity .5s var(--ease), transform .8s var(--ease); }
+.xpiece:hover .xpiece__img img.is-photo { opacity: 1; }
 /* En celular/tablet (sin mouse) las tarjetas alternan solas entre diseño y foto */
 @media (hover: none) {
   .card__media img + img, .xpiece__img img.is-photo { animation: photoSwap 7s ease-in-out infinite; }
-  .xpiece__img img.is-photo { animation-direction: reverse; }
 }
 @keyframes photoSwap { 0%, 38% { opacity: 0; } 50%, 88% { opacity: 1; } 100% { opacity: 0; } }
 .xpiece__img img { width: 100%; height: 100%; object-fit: contain; padding: 8%; filter: drop-shadow(0 10px 12px rgba(29, 27, 25, .16)); transition: transform .8s var(--ease); }

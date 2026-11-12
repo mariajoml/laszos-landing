@@ -679,6 +679,62 @@ window.LASZOS_PRODUCTS = [
   "tag": "Nuevo"
  },
  {
+  "id": "limpion-limonero-azul",
+  "cat": "panos",
+  "art": true,
+  "trio": true,
+  "name": "Limpión Limonero Azul",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
+  "price": 86000,
+  "imgs": [
+   "assets/img/limpiones/limpion-limonero-azul.jpg",
+   "assets/img/limpiones/limpion-limonero-azul-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "chiro-limonero-azul",
+  "cat": "panos",
+  "art": true,
+  "trio": true,
+  "name": "Chiro Limonero Azul",
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
+  "price": 86000,
+  "imgs": [
+   "assets/img/limpiones/chiro-limonero-azul.jpg",
+   "assets/img/limpiones/chiro-limonero-azul-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "limpion-limonero-amarillo",
+  "cat": "panos",
+  "art": true,
+  "trio": true,
+  "name": "Limpión Limonero Amarillo",
+  "line": "Limpión · se venden de a 3, combinables con chiros",
+  "price": 86000,
+  "imgs": [
+   "assets/img/limpiones/limpion-limonero-amarillo.jpg",
+   "assets/img/limpiones/limpion-limonero-amarillo-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "chiro-limonero-amarillo",
+  "cat": "panos",
+  "art": true,
+  "trio": true,
+  "name": "Chiro Limonero Amarillo",
+  "line": "Chiro · se venden de a 3, combinables con limpiones",
+  "price": 86000,
+  "imgs": [
+   "assets/img/limpiones/chiro-limonero-amarillo.jpg",
+   "assets/img/limpiones/chiro-limonero-amarillo-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
   "id": "serv-limones",
   "cat": "servilletas",
   "name": "Servilletas Limones y Flores",

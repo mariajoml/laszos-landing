@@ -131,11 +131,8 @@
     if (p.variants) { const v = p.variants[state.variant[p.id] || 0]; return [v.img]; }
     return photoFirst(p);
   }
-  // En los diseños con mockup (art), primero se muestra la foto de cómo se ve y después el diseño plano.
-  function photoFirst(p) {
-    if (!p.art || p.imgs.length < 2) return p.imgs;
-    return [...p.imgs.slice(1), p.imgs[0]];
-  }
+  // Orden de imágenes: primero el diseño y después el mockup (cómo se ve).
+  function photoFirst(p) { return p.imgs; }
   const isPhoto = (p, src) => !!p.art && src !== p.imgs[0];
   function card(p, i) {
     const imgs = imgsOf(p);
