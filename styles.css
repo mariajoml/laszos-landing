@@ -138,7 +138,7 @@ h1 em, h2 em { color: var(--accent); }
 
 /* Categories */
 .cats, .shop, .occ { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter) clamp(64px, 8vw, 120px); }
-.cats__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; }
+.cats__grid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 14px; }
 .cat { display: block; text-align: left; }
 .cat__img { aspect-ratio: 4 / 5; overflow: hidden; background: var(--sand); margin-bottom: 14px; }
 .cat__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
@@ -355,6 +355,49 @@ h1 em, h2 em { color: var(--accent); }
 }
 .toast.is-on { transform: translate(-50%, 0); opacity: 1; }
 
+/* ---------- Navidad ---------- */
+.topbar--xmas { background: var(--accent); }
+.topbar--xmas .topbar__track span:nth-child(even) { color: #f0d3a4; }
+.header__link--xmas, .header__nav a.is-xmas, .mobile-nav__panel a.is-xmas, .cat--xmas h3 { color: var(--accent); }
+.hero--xmas::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: url("assets/img/navidad/cascanueces-chiro.jpg") center / 420px repeat; opacity: .3;
+}
+.card__tag--xmas { background: var(--accent); color: #fff; }
+
+/* Diseños planos (estampados): se muestran completos sobre papel */
+.is-art { background: #f3eadc !important; }
+.is-art img { object-fit: contain !important; padding: 7%; filter: drop-shadow(0 12px 14px rgba(29, 27, 25, .16)); }
+.pin__img.is-art img { transform: none; }
+.pin:hover .pin__img.is-art img { transform: scale(1.04); }
+
+.xmas { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 7vw, 100px) var(--gutter) clamp(64px, 8vw, 120px); }
+.xmas__head { text-align: center; max-width: 640px; margin: 0 auto clamp(32px, 4vw, 56px); }
+.xmas__head > p:last-child { color: var(--ink-2); margin: 16px auto 0; }
+.xmas__cols { display: grid; gap: clamp(28px, 4vw, 48px); }
+.xcol { display: grid; grid-template-columns: minmax(260px, 1fr) 2.6fr; border: 1px solid var(--line); background: #fff; }
+.xcol__intro { background: var(--pattern) center / 320px repeat; padding: clamp(18px, 3vw, 36px); display: flex; align-items: center; }
+.xcol__card { background: rgba(251, 248, 243, .95); padding: 28px 26px; border-top: 3px solid var(--tone); box-shadow: 0 20px 40px -28px rgba(29, 27, 25, .5); }
+.xcol__card .eyebrow { margin-bottom: 8px; }
+.xcol__card h3 { font-size: clamp(30px, 3vw, 40px); color: var(--tone); margin-bottom: 12px; }
+.xcol__card p { font-size: 15px; color: var(--ink-2); margin: 0 0 18px; }
+.xcol__card .link-arrow { color: var(--tone); }
+.xcol__pieces { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; padding: clamp(16px, 2vw, 24px); align-items: start; }
+.xpiece { text-align: left; }
+.xpiece__img { display: block; aspect-ratio: 4 / 5; background: #f3eadc; overflow: hidden; margin-bottom: 10px; }
+.xpiece__img img { width: 100%; height: 100%; object-fit: contain; padding: 8%; filter: drop-shadow(0 10px 12px rgba(29, 27, 25, .16)); transition: transform .8s var(--ease); }
+.xpiece:hover .xpiece__img img { transform: scale(1.06); }
+.xpiece b { display: block; font: 500 18px/1.2 var(--serif); }
+.xpiece > span:last-child { font-size: 13px; color: var(--muted); }
+@media (max-width: 1180px) {
+  .xcol { grid-template-columns: 1fr; }
+}
+@media (max-width: 960px) {
+  .xcol__pieces { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 42%; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .xcol__pieces::-webkit-scrollbar { display: none; }
+  .xpiece { scroll-snap-align: start; }
+}
+
 /* Responsive */
 @media (max-width: 1180px) {
   .cats__grid { grid-template-columns: repeat(4, 1fr); }
@@ -376,7 +419,9 @@ h1 em, h2 em { color: var(--accent); }
   .qv { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
-  .cats__grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cats__grid { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 34%; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-right: calc(var(--gutter) * -1); padding-right: var(--gutter); }
+  .cats__grid::-webkit-scrollbar { display: none; }
+  .cat { scroll-snap-align: start; }
   .cat h3 { font-size: 18px; }
   .cat span { display: none; }
   .toolbar { position: static; }

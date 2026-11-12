@@ -1,14 +1,208 @@
 // Catálogo Laszos. Precios de ejemplo en pesos colombianos (COP): edítalos aquí.
 window.LASZOS_PRODUCTS = [
  {
+  "id": "nav-cascanueces-panoleta",
+  "cat": "panoletas",
+  "col": "cascanueces",
+  "art": true,
+  "name": "Pañoleta Cascanueces",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/navidad/cascanueces-panoleta.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-cascanueces-servilleta",
+  "cat": "servilletas",
+  "col": "cascanueces",
+  "art": true,
+  "name": "Servilletas Cascanueces",
+  "line": "Juego de 6 · estampadas",
+  "price": 180000,
+  "imgs": [
+   "assets/img/navidad/cascanueces-servilleta.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-cascanueces-mantel",
+  "cat": "manteles",
+  "col": "cascanueces",
+  "art": true,
+  "name": "Mantel Cascanueces",
+  "line": "Rectangular · colección Navidad",
+  "price": 460000,
+  "imgs": [
+   "assets/img/navidad/cascanueces-mantel.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-cascanueces-limpion",
+  "cat": "panos",
+  "col": "cascanueces",
+  "art": true,
+  "name": "Limpión Cascanueces",
+  "line": "Limpión de cocina",
+  "price": 45000,
+  "imgs": [
+   "assets/img/navidad/cascanueces-limpion.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-cascanueces-chiro",
+  "cat": "panos",
+  "col": "cascanueces",
+  "art": true,
+  "name": "Chiro Cascanueces",
+  "line": "Chiro de cocina · estampado continuo",
+  "price": 40000,
+  "imgs": [
+   "assets/img/navidad/cascanueces-chiro.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-velitas-panoleta",
+  "cat": "panoletas",
+  "col": "velitas",
+  "art": true,
+  "name": "Pañoleta Noche de Velitas",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/navidad/velitas-panoleta.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-velitas-servilleta",
+  "cat": "servilletas",
+  "col": "velitas",
+  "art": true,
+  "name": "Servilletas Noche de Velitas",
+  "line": "Juego de 6 · estampadas",
+  "price": 180000,
+  "imgs": [
+   "assets/img/navidad/velitas-servilleta.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-velitas-mantel",
+  "cat": "manteles",
+  "col": "velitas",
+  "art": true,
+  "name": "Mantel Noche de Velitas",
+  "line": "Rectangular · colección Navidad",
+  "price": 460000,
+  "imgs": [
+   "assets/img/navidad/velitas-mantel.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-velitas-limpion",
+  "cat": "panos",
+  "col": "velitas",
+  "art": true,
+  "name": "Limpión Noche de Velitas",
+  "line": "Limpión de cocina",
+  "price": 45000,
+  "imgs": [
+   "assets/img/navidad/velitas-limpion.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-velitas-chiro",
+  "cat": "panos",
+  "col": "velitas",
+  "art": true,
+  "name": "Chiro Noche de Velitas",
+  "line": "Chiro de cocina · estampado continuo",
+  "price": 40000,
+  "imgs": [
+   "assets/img/navidad/velitas-chiro.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-porcelana-panoleta",
+  "cat": "panoletas",
+  "col": "porcelana",
+  "art": true,
+  "name": "Pañoleta Porcelana",
+  "line": "Pañoleta · también como servilleta",
+  "price": 150000,
+  "imgs": [
+   "assets/img/navidad/porcelana-panoleta.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-porcelana-servilleta",
+  "cat": "servilletas",
+  "col": "porcelana",
+  "art": true,
+  "name": "Servilletas Porcelana",
+  "line": "Juego de 6 · estampadas",
+  "price": 180000,
+  "imgs": [
+   "assets/img/navidad/porcelana-servilleta.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-porcelana-mantel",
+  "cat": "manteles",
+  "col": "porcelana",
+  "art": true,
+  "name": "Mantel Porcelana",
+  "line": "Rectangular · colección Navidad",
+  "price": 460000,
+  "imgs": [
+   "assets/img/navidad/porcelana-mantel.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-porcelana-limpion",
+  "cat": "panos",
+  "col": "porcelana",
+  "art": true,
+  "name": "Limpión Porcelana",
+  "line": "Limpión de cocina",
+  "price": 45000,
+  "imgs": [
+   "assets/img/navidad/porcelana-limpion.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "nav-porcelana-chiro",
+  "cat": "panos",
+  "col": "porcelana",
+  "art": true,
+  "name": "Chiro Porcelana",
+  "line": "Chiro de cocina · estampado continuo",
+  "price": 40000,
+  "imgs": [
+   "assets/img/navidad/porcelana-chiro.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
   "id": "mantel-aves-del-tropico",
   "cat": "manteles",
   "name": "Mantel Aves del Trópico",
   "line": "Redondo · colección Jardín",
   "price": 520000,
   "imgs": [
-   "assets/img/productos/mantel-aves-del-tropico.jpg",
-   "assets/img/productos/mantel-aves-del-tropico-2.jpg"
+   "assets/img/productos/mantel-aves-del-tropico.jpg"
   ],
   "tag": "Nuevo"
  },
@@ -23,16 +217,6 @@ window.LASZOS_PRODUCTS = [
   ]
  },
  {
-  "id": "mantel-jardin-de-aves",
-  "cat": "manteles",
-  "name": "Mantel Jardín de Aves",
-  "line": "Rectangular · fondo marfil",
-  "price": 460000,
-  "imgs": [
-   "assets/img/productos/mantel-jardin-de-aves.jpg"
-  ]
- },
- {
   "id": "mantel-guirnalda-silvestre",
   "cat": "manteles",
   "name": "Mantel Guirnalda Silvestre",
@@ -41,18 +225,6 @@ window.LASZOS_PRODUCTS = [
   "imgs": [
    "assets/img/productos/mantel-guirnalda-silvestre.jpg"
   ]
- },
- {
-  "id": "mantel-toile-azul",
-  "cat": "manteles",
-  "name": "Mantel Toile Azul",
-  "line": "Rectangular · azul porcelana",
-  "price": 490000,
-  "imgs": [
-   "assets/img/productos/mantel-toile-azul.jpg",
-   "assets/img/productos/mantel-toile-azul-2.jpg"
-  ],
-  "tag": "Más vendido"
  },
  {
   "id": "mantel-follaje",
@@ -81,8 +253,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Rectangular · salvia",
   "price": 490000,
   "imgs": [
-   "assets/img/productos/mantel-botanico-salvia.jpg",
-   "assets/img/productos/mantel-botanico-salvia-2.jpg"
+   "assets/img/productos/mantel-botanico-salvia.jpg"
   ]
  },
  {

@@ -13,16 +13,16 @@
 </head>
 <body>
 
-  <div class="topbar" role="note">
+  <div class="topbar topbar--xmas" role="note">
     <div class="topbar__track">
-      <span>Hecho a mano, pieza por pieza</span><span>✦</span>
+      <span>Nueva colección de Navidad</span><span>✦</span>
+      <span>Cascanueces · Noche de Velitas · Porcelana</span><span>✦</span>
+      <span>Envuelto para regalar con el lazo de la casa</span><span>✦</span>
       <span>Personaliza con tu monograma</span><span>✦</span>
-      <span>Estampados de autor</span><span>✦</span>
-      <span>Pedidos para eventos y regalos</span><span>✦</span>
-      <span>Hecho a mano, pieza por pieza</span><span>✦</span>
+      <span>Nueva colección de Navidad</span><span>✦</span>
+      <span>Cascanueces · Noche de Velitas · Porcelana</span><span>✦</span>
+      <span>Envuelto para regalar con el lazo de la casa</span><span>✦</span>
       <span>Personaliza con tu monograma</span><span>✦</span>
-      <span>Estampados de autor</span><span>✦</span>
-      <span>Pedidos para eventos y regalos</span><span>✦</span>
     </div>
   </div>
 
@@ -32,6 +32,7 @@
         <button class="icon-btn header__menu" aria-label="Abrir menú" data-open-menu>
           <svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
         </button>
+        <a href="#navidad" class="header__link header__link--xmas">Navidad</a>
         <a href="#monograma" class="header__link">Monograma</a>
         <a href="#ocasiones" class="header__link">Ocasiones</a>
       </div>
@@ -53,6 +54,7 @@
       </div>
     </div>
     <nav class="header__nav" aria-label="Categorías">
+      <a href="#navidad" class="is-xmas">✦ Navidad</a>
       <a href="#tienda" data-filter-link="manteles">Manteles</a>
       <a href="#tienda" data-filter-link="servilletas">Servilletas</a>
       <a href="#tienda" data-filter-link="caminos">Caminos</a>
@@ -69,6 +71,7 @@
         <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
       <img src="assets/brand/logo-ink.png" alt="" class="mobile-nav__logo">
+      <a href="#navidad" class="is-xmas">Colección de Navidad</a>
       <a href="#tienda" data-filter-link="manteles">Manteles</a>
       <a href="#tienda" data-filter-link="servilletas">Servilletas</a>
       <a href="#tienda" data-filter-link="caminos">Caminos e individuales</a>
@@ -83,17 +86,27 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero hero--xmas" aria-labelledby="hero-title">
       <div class="hero__board" data-board aria-label="Piezas destacadas"></div>
       <div class="hero__copy">
-        <p class="eyebrow">Mantelería de autor · Hecho a mano</p>
+        <p class="eyebrow">Navidad 2026 · Mantelería de autor</p>
         <h1 id="hero-title">El arte de <em>vestir</em> la mesa</h1>
-        <p class="hero__lead">Estampados pintados para Laszos en manteles, servilletas, pañoletas y toallas, listos para llevar tu monograma.</p>
+        <p class="hero__lead">Llegó la colección de Navidad: tres historias pintadas para Laszos en manteles, servilletas, pañoletas, limpiones y chiros.</p>
         <div class="hero__ctas">
-          <a href="#tienda" class="btn btn--ink">Explorar la tienda</a>
-          <a href="#monograma" class="btn btn--ghost">Crear mi monograma</a>
+          <a href="#navidad" class="btn btn--ink">Ver la colección de Navidad</a>
+          <a href="#tienda" class="btn btn--ghost">Explorar la tienda</a>
         </div>
       </div>
+    </section>
+
+    <!-- Christmas collection -->
+    <section class="xmas" id="navidad" aria-labelledby="xmas-title">
+      <div class="xmas__head">
+        <p class="eyebrow">Temporada · Edición limitada</p>
+        <h2 id="xmas-title">Colección de <em>Navidad</em></h2>
+        <p>Tres colecciones para vestir la mesa en diciembre. Cada una trae pañoleta, servilletas, mantel, limpión y chiro que combinan entre sí.</p>
+      </div>
+      <div class="xmas__cols" data-xmas></div>
     </section>
 
     <!-- Categories -->
@@ -119,7 +132,7 @@
         <div class="toolbar__right">
           <label class="search">
             <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
-            <input type="search" placeholder="Buscar: limones, toile, jirafas…" data-search aria-label="Buscar productos">
+            <input type="search" placeholder="Buscar: cascanueces, porcelana, limones…" data-search aria-label="Buscar productos">
           </label>
           <label class="select">
             <span class="visually-hidden">Ordenar</span>
@@ -203,7 +216,7 @@
           <img src="assets/img/escenas/boda.jpg" alt="Mesa de boda con flores blancas" loading="lazy">
           <span><small>Bodas y bautizos</small>Monogramas para el gran día</span>
         </a>
-        <a class="occ__tile" href="#tienda" data-search-link="navidad cabaña">
+        <a class="occ__tile" href="#tienda" data-filter-link="navidad">
           <img src="assets/img/escenas/navidad.jpg" alt="Mesa de Navidad con servilleta de pino bordado" loading="lazy">
           <span><small>Temporada</small>Navidad en casa</span>
         </a>
@@ -250,7 +263,7 @@
       <p>Mantelería, servilletas y blancos personalizados.</p>
     </div>
     <div class="footer__cols">
-      <div><h4>Tienda</h4><a href="#tienda" data-filter-link="manteles">Manteles</a><a href="#tienda" data-filter-link="servilletas">Servilletas</a><a href="#tienda" data-filter-link="caminos">Caminos e individuales</a><a href="#tienda" data-filter-link="panos">Paños de cocina</a><a href="#tienda" data-filter-link="panoletas">Pañoletas</a><a href="#tienda" data-filter-link="toallas">Toallas</a></div>
+      <div><h4>Tienda</h4><a href="#navidad">Navidad</a><a href="#tienda" data-filter-link="manteles">Manteles</a><a href="#tienda" data-filter-link="servilletas">Servilletas</a><a href="#tienda" data-filter-link="caminos">Caminos e individuales</a><a href="#tienda" data-filter-link="panos">Paños de cocina</a><a href="#tienda" data-filter-link="panoletas">Pañoletas</a><a href="#tienda" data-filter-link="toallas">Toallas</a></div>
       <div><h4>Servicios</h4><a href="#monograma">Monogramas</a><a href="#ocasiones">Eventos y bodas</a><a href="#tienda" data-filter-link="personalizados">Regalos personalizados</a></div>
       <div><h4>Laszos</h4><a href="#" data-contact>Contacto por WhatsApp</a><a href="#">Instagram</a><a href="#">Cuidados de la tela</a></div>
     </div>

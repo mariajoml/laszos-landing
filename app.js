@@ -5,8 +5,22 @@
 
   const PRODUCTS = window.LASZOS_PRODUCTS || [];
   const byId = Object.fromEntries(PRODUCTS.map(p => [p.id, p]));
+  const isXmas = p => !!p.col || p.tag === 'Navidad';
+  const inCat = (p, c) => c === 'todo' || p.cat === c || (c === 'navidad' && isXmas(p));
+  const COLLECTIONS = [
+    { id: 'cascanueces', name: 'Cascanueces', kicker: 'Toile en rojo vino',
+      text: 'Un cuento de invierno dibujado a plumilla: cascanueces, bailarina sobre el hielo, caballitos de madera y lazos con campanas.',
+      pattern: 'assets/img/navidad/cascanueces-chiro.jpg', tone: '#8c2f39' },
+    { id: 'velitas', name: 'Noche de Velitas', kicker: 'Acuarela colombiana',
+      text: 'La Navidad de casa: orquídeas, buganvilias, faroles de papel, natilla con canela y buñuelos recién hechos.',
+      pattern: 'assets/img/navidad/velitas-chiro.jpg', tone: '#b0306a' },
+    { id: 'porcelana', name: 'Porcelana', kicker: 'Azul cobalto y lazo rojo',
+      text: 'Bolas, campanas y estrellas de loza pintada a mano, con rayas de mantel clásico y ramas de pino.',
+      pattern: 'assets/img/navidad/porcelana-chiro.jpg', tone: '#1f3f8f' },
+  ];
   const CATS = [
-    { id: 'manteles', label: 'Manteles', cover: 'assets/img/productos/mantel-toile-azul.jpg' },
+    { id: 'navidad', label: 'Navidad ✦', short: 'Navidad', cover: 'assets/img/navidad/cascanueces-panoleta.jpg', art: true },
+    { id: 'manteles', label: 'Manteles', cover: 'assets/img/productos/mantel-flor-de-loto.jpg' },
     { id: 'servilletas', label: 'Servilletas', cover: 'assets/img/productos/serv-porcelana.jpg' },
     { id: 'caminos', label: 'Caminos e individuales', short: 'Caminos', cover: 'assets/img/productos/individual-limones.jpg' },
     { id: 'panos', label: 'Paños de cocina', short: 'Paños', cover: 'assets/img/productos/pano-limonero-azul.jpg' },
@@ -46,14 +60,15 @@
   /* ---------- Hero board ---------- */
   const L = 'clamp(150px, 14vw, 220px)', M = 'clamp(130px, 11.5vw, 185px)', S = 'clamp(105px, 9vw, 145px)';
   const PINS = [
-    ['panoleta-tulipanes', 11, 30, L, -7], ['serv-porcelana', 25, 15, S, 4], ['serv-zorro', 23, 64, M, 5], ['pano-gallo', 8, 80, S, -3],
-    ['panoleta-leopardo', 89, 30, L, 6], ['serv-palmera', 75, 16, S, -4], ['toalla-laurel', 77, 65, M, -5], ['pano-limonero-amarillo', 92, 80, S, 3],
+    ['nav-cascanueces-panoleta', 11, 30, L, -7], ['nav-porcelana-servilleta', 25, 15, S, 4], ['nav-velitas-panoleta', 23, 64, M, 5], ['nav-porcelana-limpion', 8, 80, S, -3],
+    ['nav-porcelana-panoleta', 89, 30, L, 6], ['nav-cascanueces-servilleta', 75, 16, S, -4], ['nav-velitas-servilleta', 77, 65, M, -5], ['nav-cascanueces-limpion', 92, 80, S, 3],
   ];
+  const artCls = p => (p && p.art ? ' is-art' : '');
   const board = $('[data-board]');
   board.innerHTML = PINS.map(([id, x, y, w, r], i) => {
     const p = byId[id];
     return `<button class="pin" data-quick="${p.id}" data-depth="${(i % 3) + 1}" style="--x:${x}%;--y:${y}%;--w:${w};--r:${r}deg;--d:${120 + i * 90}ms">
-      <span class="pin__img"><img src="${p.imgs[0]}" alt="${esc(p.name)}"></span><span class="pin__cap">${esc(p.name)}</span></button>`;
+      <span class="pin__img${artCls(p)}"><img src="${p.imgs[0]}" alt="${esc(p.name)}"></span><span class="pin__cap">${esc(p.name)}</span></button>`;
   }).join('');
   const hero = $('.hero');
   if (matchMedia('(hover: hover) and (min-width: 961px)').matches) {
@@ -65,9 +80,9 @@
 
   /* ---------- Categories ---------- */
   $('[data-cats]').innerHTML = CATS.map(c => {
-    const n = PRODUCTS.filter(p => p.cat === c.id).length;
-    return `<a class="cat" href="#tienda" data-filter-link="${c.id}">
-      <div class="cat__img"><img src="${c.cover}" alt="" loading="lazy"></div>
+    const n = PRODUCTS.filter(p => inCat(p, c.id)).length;
+    return `<a class="cat${c.id === 'navidad' ? ' cat--xmas' : ''}" href="#tienda" data-filter-link="${c.id}">
+      <div class="cat__img${c.art ? ' is-art' : ''}"><img src="${c.cover}" alt="" loading="lazy"></div>
       <h3>${c.short || c.label}</h3><span>${n} piezas</span></a>`;
   }).join('');
 
@@ -76,7 +91,7 @@
   function renderChips() {
     const all = [{ id: 'todo', label: 'Todo' }, ...CATS];
     chips.innerHTML = all.map(c => {
-      const n = c.id === 'todo' ? PRODUCTS.length : PRODUCTS.filter(p => p.cat === c.id).length;
+      const n = PRODUCTS.filter(p => inCat(p, c.id)).length;
       const on = !state.favsOnly && state.cat === c.id;
       return `<button class="chip ${on ? 'is-on' : ''}" role="tab" aria-selected="${on}" data-chip="${c.id}">${c.label}<sup>${n}</sup></button>`;
     }).join('') + `<button class="chip ${state.favsOnly ? 'is-on' : ''}" data-chip="favs">♡ Favoritos<sup>${state.favs.size}</sup></button>`;
@@ -91,7 +106,7 @@
   function filtered() {
     const q = norm(state.q.trim());
     let list = PRODUCTS.filter(p =>
-      (state.favsOnly ? state.favs.has(p.id) : (state.cat === 'todo' || p.cat === state.cat)) &&
+      (state.favsOnly ? state.favs.has(p.id) : inCat(p, state.cat)) &&
       (!q || q.split(/\s+/).some(w => norm(p.name + ' ' + p.line + ' ' + p.cat + ' ' + (p.tag || '')).includes(w))));
     if (state.sort === 'precio-asc') list = [...list].sort((a, b) => a.price - b.price);
     if (state.sort === 'precio-desc') list = [...list].sort((a, b) => b.price - a.price);
@@ -104,11 +119,11 @@
   }
   function card(p, i) {
     const imgs = imgsOf(p);
-    const tag = p.tag ? `<span class="card__tag ${p.tag === 'Más vendido' ? 'card__tag--accent' : ''}">${esc(p.tag)}</span>` : '';
+    const tag = p.tag ? `<span class="card__tag ${p.tag === 'Más vendido' ? 'card__tag--accent' : ''}${p.tag === 'Navidad' ? 'card__tag--xmas' : ''}">${esc(p.tag)}</span>` : '';
     const dots = p.variants ? `<div class="dots">${p.variants.slice(0, 5).map((v, k) =>
       `<button class="dot ${k === (state.variant[p.id] || 0) ? 'is-on' : ''}" style="background:${v.hex}" title="${esc(v.name)}" aria-label="${esc(v.name)}" data-dot="${p.id}:${k}"></button>`).join('')}${p.variants.length > 5 ? `<small>+${p.variants.length - 5}</small>` : ''}</div>` : '';
     return `<article class="card" style="animation-delay:${(i % 12) * 40}ms">
-      <div class="card__media" data-quick="${p.id}">
+      <div class="card__media${artCls(p)}" data-quick="${p.id}">
         ${tag}
         ${imgs.slice(0, 2).map((src, k) => `<img src="${src}" alt="${k ? '' : esc(p.name)}" loading="lazy">`).join('')}
         <button class="icon-btn card__fav ${state.favs.has(p.id) ? 'is-on' : ''}" aria-label="Guardar en favoritos" data-fav="${p.id}">
@@ -174,22 +189,47 @@
   /* ---------- Towels rail ---------- */
   const rail = $('[data-towels]');
   rail.innerHTML = PRODUCTS.filter(p => p.cat === 'panoletas' || p.cat === 'toallas').map(p =>
-    `<button class="towel" data-quick="${p.id}"><div class="towel__img"><img src="${p.imgs[0]}" alt="${esc(p.name)}" loading="lazy"></div>
+    `<button class="towel" data-quick="${p.id}"><div class="towel__img${artCls(p)}"><img src="${p.imgs[0]}" alt="${esc(p.name)}" loading="lazy"></div>
      <div class="towel__meta"><b>${esc(p.name)}</b><span>${money(p.price)}</span></div></button>`).join('');
   const step = () => rail.firstElementChild.getBoundingClientRect().width + 18;
   $('[data-towel-prev]').addEventListener('click', () => rail.scrollBy({ left: -step(), behavior: 'smooth' }));
   $('[data-towel-next]').addEventListener('click', () => rail.scrollBy({ left: step(), behavior: 'smooth' }));
+
+  /* ---------- Colección de Navidad ---------- */
+  const KIND_ORDER = ['panoleta', 'servilleta', 'mantel', 'limpion', 'chiro'];
+  $('[data-xmas]').innerHTML = COLLECTIONS.map(c => {
+    const pieces = KIND_ORDER.map(k => byId[`nav-${c.id}-${k}`]).filter(Boolean);
+    return `<article class="xcol" style="--pattern:url('${c.pattern}');--tone:${c.tone}">
+      <div class="xcol__intro">
+        <div class="xcol__card">
+          <p class="eyebrow">${esc(c.kicker)}</p>
+          <h3>${esc(c.name)}</h3>
+          <p>${esc(c.text)}</p>
+          <button class="link-arrow" data-xcol="${c.id}">Ver las ${pieces.length} piezas</button>
+        </div>
+      </div>
+      <div class="xcol__pieces">${pieces.map(p => `<button class="xpiece" data-quick="${p.id}">
+        <span class="xpiece__img"><img src="${p.imgs[0]}" alt="${esc(p.name)}" loading="lazy"></span>
+        <b>${esc(p.name.replace(' ' + c.name, ''))}</b><span>${money(p.price)}</span></button>`).join('')}</div>
+    </article>`;
+  }).join('');
+  $('[data-xmas]').addEventListener('click', e => {
+    const b = e.target.closest('[data-xcol]'); if (!b) return;
+    const c = COLLECTIONS.find(x => x.id === b.dataset.xcol);
+    goShop('navidad', c.name.split(' ').pop()); $('#tienda').scrollIntoView();
+  });
 
   /* ---------- Quick view ---------- */
   const modal = $('[data-modal]');
   function openQuick(id) {
     const p = byId[id]; if (!p) return;
     let vi = state.variant[id] || 0, qty = 1, imgIndex = 0;
-    const catLabel = CATS.find(c => c.id === p.cat)?.label || '';
+    const col = COLLECTIONS.find(c => c.id === p.col);
+    const catLabel = (CATS.find(c => c.id === p.cat)?.label || '') + (col ? ` · Navidad ${col.name}` : '');
     function draw() {
       const imgs = p.variants ? [p.variants[vi].img] : p.imgs;
       $('[data-qv]').innerHTML = `
-        <div class="qv__media">
+        <div class="qv__media${artCls(p)}">
           <img class="qv__main" src="${imgs[imgIndex] || imgs[0]}" alt="${esc(p.name)}">
           ${imgs.length > 1 ? `<div class="qv__thumbs">${imgs.map((s, k) => `<button class="${k === imgIndex ? 'is-on' : ''}" data-thumb="${k}"><img src="${s}" alt=""></button>`).join('')}</div>` : ''}
         </div>
