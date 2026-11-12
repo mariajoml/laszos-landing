@@ -389,8 +389,37 @@ h1 em, h2 em { color: var(--accent); }
 .xpiece:hover .xpiece__img img { transform: scale(1.06); }
 .xpiece b { display: block; font: 500 18px/1.2 var(--serif); }
 .xpiece > span:last-child { font-size: 13px; color: var(--muted); }
+.xpack {
+  grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px;
+  padding: 16px clamp(16px, 2vw, 24px); border-top: 1px dashed var(--line); background: color-mix(in srgb, var(--tone) 5%, #fff);
+}
+.xpack .eyebrow { margin: 0 0 4px; color: var(--tone); }
+.xpack b { font: 500 20px/1.2 var(--serif); }
+.xpack__buy { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; }
+.xpack__buy > span { font-size: 17px; }
+.xpack__buy .btn { height: 44px; padding: 0 20px; }
+.xtrio { display: grid; grid-template-columns: auto 1fr; gap: clamp(20px, 3vw, 40px); align-items: center; border: 1px solid var(--line); background: #fff; padding: clamp(18px, 2.5vw, 28px); }
+.xtrio__imgs { display: flex; }
+.xtrio__imgs img { width: clamp(70px, 8vw, 110px); aspect-ratio: 2 / 3; object-fit: cover; box-shadow: 0 12px 20px -14px rgba(29, 27, 25, .5); }
+.xtrio__imgs img + img { margin-left: -18px; }
+.xtrio__imgs img:nth-child(1) { transform: rotate(-5deg); }
+.xtrio__imgs img:nth-child(3) { transform: rotate(5deg); }
+.xtrio h3 { font-size: clamp(26px, 2.6vw, 34px); margin-bottom: 8px; }
+.xtrio p { color: var(--ink-2); margin: 0 0 14px; font-size: 15px; }
+.xtrio .eyebrow { margin-bottom: 6px; }
+s.was { color: var(--muted); font-size: .85em; margin-right: 2px; }
+.qv__price .save { font-size: 13px; color: var(--accent); margin-left: 8px; letter-spacing: .04em; }
+.qv__incl { margin: 0; padding-left: 18px; color: var(--ink-2); }
+.qv__note { margin: 0; padding: 10px 14px; background: var(--ivory); font-size: 14px; color: var(--ink-2); }
+.qv__info .seg { display: flex; flex-wrap: wrap; }
+.trio-sum { display: flex; justify-content: space-between; gap: 12px; padding: 14px; margin: 12px 0; background: var(--ivory); font-size: 14px; }
+.trio-sum p { margin: 4px 0 0; color: var(--accent); font-size: 13px; }
+.trio-sum b { font-weight: 500; }
 @media (max-width: 1180px) {
   .xcol { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .xtrio { grid-template-columns: 1fr; justify-items: start; }
 }
 @media (max-width: 960px) {
   .xcol__pieces { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 42%; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }

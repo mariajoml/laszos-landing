@@ -1,4 +1,5 @@
-// Catálogo Laszos. Precios de ejemplo en pesos colombianos (COP): edítalos aquí.
+// Catálogo Laszos. Precios en pesos colombianos (COP) según la guía de Sandra (oct. 2026): edítalos aquí.
+// price: null = "precio a consultar" · sizes = juegos de 4/6 · trio = se vende de a 3 (price es el del set) · list = precio sin descuento del pack
 window.LASZOS_PRODUCTS = [
  {
   "id": "nav-cascanueces-panoleta",
@@ -6,8 +7,8 @@ window.LASZOS_PRODUCTS = [
   "col": "cascanueces",
   "art": true,
   "name": "Pañoleta Cascanueces",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/navidad/cascanueces-panoleta.jpg"
   ],
@@ -19,12 +20,22 @@ window.LASZOS_PRODUCTS = [
   "col": "cascanueces",
   "art": true,
   "name": "Servilletas Cascanueces",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/navidad/cascanueces-servilleta.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ]
  },
  {
   "id": "nav-cascanueces-mantel",
@@ -33,7 +44,7 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Mantel Cascanueces",
   "line": "Rectangular · colección Navidad",
-  "price": 460000,
+  "price": null,
   "imgs": [
    "assets/img/navidad/cascanueces-mantel.jpg"
   ],
@@ -45,12 +56,13 @@ window.LASZOS_PRODUCTS = [
   "col": "cascanueces",
   "art": true,
   "name": "Limpión Cascanueces",
-  "line": "Limpión de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/navidad/cascanueces-limpion.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "trio": true
  },
  {
   "id": "nav-cascanueces-chiro",
@@ -59,7 +71,7 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Chiro Cascanueces",
   "line": "Chiro de cocina · estampado continuo",
-  "price": 40000,
+  "price": null,
   "imgs": [
    "assets/img/navidad/cascanueces-chiro.jpg"
   ],
@@ -71,8 +83,8 @@ window.LASZOS_PRODUCTS = [
   "col": "velitas",
   "art": true,
   "name": "Pañoleta Noche de Velitas",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/navidad/velitas-panoleta.jpg"
   ],
@@ -84,12 +96,22 @@ window.LASZOS_PRODUCTS = [
   "col": "velitas",
   "art": true,
   "name": "Servilletas Noche de Velitas",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/navidad/velitas-servilleta.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ]
  },
  {
   "id": "nav-velitas-mantel",
@@ -98,7 +120,7 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Mantel Noche de Velitas",
   "line": "Rectangular · colección Navidad",
-  "price": 460000,
+  "price": null,
   "imgs": [
    "assets/img/navidad/velitas-mantel.jpg"
   ],
@@ -110,12 +132,13 @@ window.LASZOS_PRODUCTS = [
   "col": "velitas",
   "art": true,
   "name": "Limpión Noche de Velitas",
-  "line": "Limpión de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/navidad/velitas-limpion.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "trio": true
  },
  {
   "id": "nav-velitas-chiro",
@@ -124,7 +147,7 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Chiro Noche de Velitas",
   "line": "Chiro de cocina · estampado continuo",
-  "price": 40000,
+  "price": null,
   "imgs": [
    "assets/img/navidad/velitas-chiro.jpg"
   ],
@@ -136,8 +159,8 @@ window.LASZOS_PRODUCTS = [
   "col": "porcelana",
   "art": true,
   "name": "Pañoleta Porcelana",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/navidad/porcelana-panoleta.jpg"
   ],
@@ -149,12 +172,22 @@ window.LASZOS_PRODUCTS = [
   "col": "porcelana",
   "art": true,
   "name": "Servilletas Porcelana",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/navidad/porcelana-servilleta.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ]
  },
  {
   "id": "nav-porcelana-mantel",
@@ -163,7 +196,7 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Mantel Porcelana",
   "line": "Rectangular · colección Navidad",
-  "price": 460000,
+  "price": null,
   "imgs": [
    "assets/img/navidad/porcelana-mantel.jpg"
   ],
@@ -175,12 +208,13 @@ window.LASZOS_PRODUCTS = [
   "col": "porcelana",
   "art": true,
   "name": "Limpión Porcelana",
-  "line": "Limpión de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/navidad/porcelana-limpion.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "trio": true
  },
  {
   "id": "nav-porcelana-chiro",
@@ -189,11 +223,87 @@ window.LASZOS_PRODUCTS = [
   "art": true,
   "name": "Chiro Porcelana",
   "line": "Chiro de cocina · estampado continuo",
-  "price": 40000,
+  "price": null,
   "imgs": [
    "assets/img/navidad/porcelana-chiro.jpg"
   ],
   "tag": "Navidad"
+ },
+ {
+  "id": "nav-cascanueces-pack-regalo",
+  "cat": "packs",
+  "col": "cascanueces",
+  "art": true,
+  "name": "Pack Regalo Cascanueces",
+  "line": "Pañoleta + juego de 4 servilletas",
+  "price": 199000,
+  "list": 211000,
+  "includes": [
+   "Pañoleta 72 × 72 cm",
+   "Juego de 4 servilletas 48 × 48 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/cascanueces-panoleta.jpg",
+   "assets/img/navidad/cascanueces-servilleta.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-velitas-pack-regalo",
+  "cat": "packs",
+  "col": "velitas",
+  "art": true,
+  "name": "Pack Regalo Noche de Velitas",
+  "line": "Pañoleta + juego de 4 servilletas",
+  "price": 199000,
+  "list": 211000,
+  "includes": [
+   "Pañoleta 72 × 72 cm",
+   "Juego de 4 servilletas 48 × 48 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/velitas-panoleta.jpg",
+   "assets/img/navidad/velitas-servilleta.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-porcelana-pack-regalo",
+  "cat": "packs",
+  "col": "porcelana",
+  "art": true,
+  "name": "Pack Regalo Porcelana",
+  "line": "Pañoleta + juego de 4 servilletas",
+  "price": 199000,
+  "list": 211000,
+  "includes": [
+   "Pañoleta 72 × 72 cm",
+   "Juego de 4 servilletas 48 × 48 cm"
+  ],
+  "imgs": [
+   "assets/img/navidad/porcelana-panoleta.jpg",
+   "assets/img/navidad/porcelana-servilleta.jpg"
+  ],
+  "tag": "Pack"
+ },
+ {
+  "id": "nav-trio-limpiones",
+  "cat": "packs",
+  "col": "trio",
+  "art": true,
+  "name": "Trío de limpiones navideños",
+  "line": "Uno de cada colección",
+  "price": 86000,
+  "includes": [
+   "Limpión Cascanueces",
+   "Limpión Noche de Velitas",
+   "Limpión Porcelana"
+  ],
+  "imgs": [
+   "assets/img/navidad/cascanueces-limpion.jpg",
+   "assets/img/navidad/porcelana-limpion.jpg"
+  ],
+  "tag": "Pack"
  },
  {
   "id": "mantel-aves-del-tropico",
@@ -281,7 +391,7 @@ window.LASZOS_PRODUCTS = [
   "cat": "caminos",
   "name": "Individuales Limón y Mayólica",
   "line": "Juego de 4",
-  "price": 175000,
+  "price": 113000,
   "imgs": [
    "assets/img/productos/individual-limones.jpg",
    "assets/img/productos/individual-limones-2.jpg"
@@ -302,224 +412,362 @@ window.LASZOS_PRODUCTS = [
   "id": "pano-ecuestre-verde",
   "cat": "panos",
   "name": "Paño Ecuestre Verde",
-  "line": "Paño de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-verde.jpg"
-  ]
+  ],
+  "trio": true
  },
  {
   "id": "pano-ecuestre-azul",
   "cat": "panos",
   "name": "Paño Ecuestre Azul",
-  "line": "Paño de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-azul.jpg"
-  ]
+  ],
+  "trio": true
  },
  {
   "id": "pano-ecuestre-perla",
   "cat": "panos",
   "name": "Paño Ecuestre Perla",
-  "line": "Paño de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/productos/pano-ecuestre-perla.jpg"
-  ]
+  ],
+  "trio": true
  },
  {
   "id": "pano-bodegon",
   "cat": "panos",
   "name": "Paño Bodegón a Cuadros",
-  "line": "Paño de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/productos/pano-bodegon.jpg"
-  ]
+  ],
+  "trio": true
  },
  {
   "id": "pano-limonero-azul",
   "cat": "panos",
   "name": "Paño Limonero Azul",
-  "line": "Paño de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/productos/pano-limonero-azul.jpg"
-  ]
+  ],
+  "trio": true
  },
  {
   "id": "pano-limonero-amarillo",
   "cat": "panos",
   "name": "Paño Limonero Amarillo",
-  "line": "Paño de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/productos/pano-limonero-amarillo.jpg"
-  ]
+  ],
+  "trio": true
  },
  {
   "id": "pano-gallo",
   "cat": "panos",
   "name": "Paño Gallo de Campo",
-  "line": "Paño de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/productos/pano-gallo.jpg"
-  ]
+  ],
+  "trio": true
  },
  {
   "id": "pano-pasionaria",
   "cat": "panos",
   "name": "Paño Pasionaria",
-  "line": "Paño de cocina",
-  "price": 45000,
+  "line": "Limpión · se venden de a 3, todos distintos",
+  "price": 86000,
   "imgs": [
    "assets/img/productos/pano-pasionaria.jpg"
-  ]
+  ],
+  "trio": true
  },
  {
   "id": "serv-limones",
   "cat": "servilletas",
   "name": "Servilletas Limones y Flores",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-limones.jpg",
    "assets/img/productos/serv-limones-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-porcelana",
   "cat": "servilletas",
   "name": "Servilletas Porcelana Azul",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-porcelana.jpg",
    "assets/img/productos/serv-porcelana-2.jpg"
   ],
-  "tag": "Más vendido"
+  "tag": "Más vendido",
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ]
  },
  {
   "id": "serv-ramas",
   "cat": "servilletas",
   "name": "Servilletas Rama de Primavera",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-ramas.jpg",
    "assets/img/productos/serv-ramas-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-cardo",
   "cat": "servilletas",
   "name": "Servilletas Cardo Azul",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-cardo.jpg",
    "assets/img/productos/serv-cardo-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-escarabajo",
   "cat": "servilletas",
   "name": "Servilletas Escarabajo Coral",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-escarabajo.jpg",
    "assets/img/productos/serv-escarabajo-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-palmera",
   "cat": "servilletas",
   "name": "Servilletas Palmera Verde",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-palmera.jpg",
    "assets/img/productos/serv-palmera-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-cabana",
   "cat": "servilletas",
   "name": "Servilletas Cabaña Nevada",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-cabana.jpg",
    "assets/img/productos/serv-cabana-2.jpg"
   ],
-  "tag": "Navidad"
+  "tag": "Navidad",
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ]
  },
  {
   "id": "serv-flor-silvestre",
   "cat": "servilletas",
   "name": "Servilletas Flor Silvestre",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-flor-silvestre.jpg",
    "assets/img/productos/serv-flor-silvestre-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-zorro",
   "cat": "servilletas",
   "name": "Servilletas Zorro del Bosque",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-zorro.jpg",
    "assets/img/productos/serv-zorro-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-palma-coral",
   "cat": "servilletas",
   "name": "Servilletas Palma Coral",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-palma-coral.jpg",
    "assets/img/productos/serv-palma-coral-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-otono",
   "cat": "servilletas",
   "name": "Servilletas Hojas de Otoño",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-otono.jpg",
    "assets/img/productos/serv-otono-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-mariposas",
   "cat": "servilletas",
   "name": "Servilletas Mariposas y Sellos",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-mariposas.jpg",
    "assets/img/productos/serv-mariposas-2.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
   "id": "serv-lirio",
   "cat": "servilletas",
   "name": "Servilletas Lirio Rojo",
-  "line": "Juego de 6 · estampadas",
-  "price": 180000,
+  "line": "Servilletas 48 × 48 cm · estampadas",
+  "price": 76000,
   "imgs": [
    "assets/img/productos/serv-lirio.jpg"
+  ],
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
   ]
  },
  {
@@ -664,8 +912,8 @@ window.LASZOS_PRODUCTS = [
   "id": "serv-monograma-s",
   "cat": "personalizados",
   "name": "Servilletas Monograma Toile",
-  "line": "Juego de 6 · con tu inicial",
-  "price": 220000,
+  "line": "Juego de 4 · con tu inicial",
+  "price": 100000,
   "imgs": [
    "assets/img/productos/serv-monograma-s.jpg"
   ],
@@ -675,8 +923,8 @@ window.LASZOS_PRODUCTS = [
   "id": "serv-monograma-laurel",
   "cat": "personalizados",
   "name": "Servilletas Monograma Laurel",
-  "line": "Juego de 6 · dos letras",
-  "price": 220000,
+  "line": "Juego de 6 · estampadas con monograma bordado",
+  "price": 150000,
   "imgs": [
    "assets/img/productos/serv-monograma-laurel.jpg"
   ],
@@ -686,8 +934,8 @@ window.LASZOS_PRODUCTS = [
   "id": "serv-festoneada",
   "cat": "personalizados",
   "name": "Servilleta Festoneada con Moño",
-  "line": "Juego de 6 · ribete verde",
-  "price": 195000,
+  "line": "Juego de 6 · troqueladas, ribete verde",
+  "price": 132000,
   "imgs": [
    "assets/img/productos/serv-festoneada.jpg"
   ]
@@ -696,8 +944,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-dalias",
   "cat": "panoletas",
   "name": "Pañoleta Dalias",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/dalias.jpg"
   ]
@@ -706,8 +954,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-escarabajos",
   "cat": "panoletas",
   "name": "Pañoleta Escarabajos",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/escarabajos.jpg"
   ]
@@ -716,8 +964,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-aves-del-paraiso",
   "cat": "panoletas",
   "name": "Pañoleta Aves del Paraíso",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/aves-del-paraiso.jpg"
   ]
@@ -726,8 +974,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-carruaje",
   "cat": "panoletas",
   "name": "Pañoleta Carruaje",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/carruaje.jpg"
   ]
@@ -736,8 +984,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-globos",
   "cat": "panoletas",
   "name": "Pañoleta Globos",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/globos.jpg"
   ]
@@ -746,8 +994,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-orquideas",
   "cat": "panoletas",
   "name": "Pañoleta Orquídeas",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/orquideas.jpg"
   ]
@@ -756,8 +1004,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-pensamientos",
   "cat": "panoletas",
   "name": "Pañoleta Pensamientos",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/pensamientos.jpg"
   ],
@@ -767,8 +1015,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-tulipanes",
   "cat": "panoletas",
   "name": "Pañoleta Tulipanes",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/tulipanes.jpg"
   ],
@@ -778,8 +1026,8 @@ window.LASZOS_PRODUCTS = [
   "id": "panoleta-leopardo",
   "cat": "panoletas",
   "name": "Pañoleta Leopardo",
-  "line": "Pañoleta · también como servilleta",
-  "price": 150000,
+  "line": "Pañoleta 72 × 72 cm · también como servilleta",
+  "price": 135000,
   "imgs": [
    "assets/img/panoletas/leopardo.jpg"
   ],
@@ -789,7 +1037,7 @@ window.LASZOS_PRODUCTS = [
   "id": "toalla-jirafas",
   "cat": "toallas",
   "name": "Toalla Jirafas",
-  "line": "Toalla · estampado Laszos",
+  "line": "Toalla doble faz · estampado Laszos",
   "price": 180000,
   "imgs": [
    "assets/img/toallas/jirafas.jpg"
@@ -799,7 +1047,7 @@ window.LASZOS_PRODUCTS = [
   "id": "toalla-tigre",
   "cat": "toallas",
   "name": "Toalla Tigre",
-  "line": "Toalla · estampado Laszos",
+  "line": "Toalla doble faz · estampado Laszos",
   "price": 180000,
   "imgs": [
    "assets/img/toallas/tigre.jpg"
@@ -809,7 +1057,7 @@ window.LASZOS_PRODUCTS = [
   "id": "toalla-surf",
   "cat": "toallas",
   "name": "Toalla Surf",
-  "line": "Toalla · estampado Laszos",
+  "line": "Toalla doble faz · estampado Laszos",
   "price": 180000,
   "imgs": [
    "assets/img/toallas/surf.jpg"
