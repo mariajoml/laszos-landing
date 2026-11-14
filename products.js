@@ -702,6 +702,7 @@ window.LASZOS_PRODUCTS = [
  {
   "id": "serv-lazo-carmesi",
   "cat": "servilletas",
+  "art": true,
   "name": "Servilletas Lazo Carmesí",
   "line": "Servilletas en lino · estampadas",
   "price": 76000,
@@ -723,6 +724,7 @@ window.LASZOS_PRODUCTS = [
  {
   "id": "serv-cinta-escocesa",
   "cat": "servilletas",
+  "art": true,
   "name": "Servilletas Cinta Escocesa",
   "line": "Servilletas en lino · estampadas",
   "price": 76000,
@@ -744,6 +746,7 @@ window.LASZOS_PRODUCTS = [
  {
   "id": "serv-esfera-dorada",
   "cat": "servilletas",
+  "art": true,
   "name": "Servilletas Esfera Dorada",
   "line": "Servilletas en lino · estampadas",
   "price": 76000,
@@ -765,6 +768,7 @@ window.LASZOS_PRODUCTS = [
  {
   "id": "serv-mono-terciopelo",
   "cat": "servilletas",
+  "art": true,
   "name": "Servilletas Moño de Terciopelo",
   "line": "Servilletas en lino · estampadas",
   "price": 76000,
@@ -786,6 +790,7 @@ window.LASZOS_PRODUCTS = [
  {
   "id": "serv-bosque-conejos",
   "cat": "servilletas",
+  "art": true,
   "name": "Servilletas Conejos del Bosque",
   "line": "Servilletas en lino · estampadas",
   "price": 76000,
@@ -807,6 +812,7 @@ window.LASZOS_PRODUCTS = [
  {
   "id": "serv-galope",
   "cat": "servilletas",
+  "art": true,
   "name": "Servilletas Caballo al Galope",
   "line": "Servilletas en lino · estampadas",
   "price": 76000,
