@@ -40,20 +40,6 @@ window.LASZOS_PRODUCTS = [
   ]
  },
  {
-  "id": "nav-cascanueces-mantel",
-  "cat": "manteles",
-  "col": "cascanueces",
-  "art": true,
-  "name": "Mantel Cascanueces",
-  "line": "Rectangular · colección Navidad",
-  "price": 250000,
-  "imgs": [
-   "assets/img/navidad/cascanueces-mantel.jpg",
-   "assets/img/navidad/cascanueces-mantel-uso.jpg"
-  ],
-  "tag": "Navidad"
- },
- {
   "id": "nav-cascanueces-limpion",
   "cat": "panos",
   "col": "cascanueces",
@@ -122,20 +108,6 @@ window.LASZOS_PRODUCTS = [
   ]
  },
  {
-  "id": "nav-velitas-mantel",
-  "cat": "manteles",
-  "col": "velitas",
-  "art": true,
-  "name": "Mantel Noche de Velitas",
-  "line": "Rectangular · colección Navidad",
-  "price": 250000,
-  "imgs": [
-   "assets/img/navidad/velitas-mantel.jpg",
-   "assets/img/navidad/velitas-mantel-uso.jpg"
-  ],
-  "tag": "Navidad"
- },
- {
   "id": "nav-velitas-limpion",
   "cat": "panos",
   "col": "velitas",
@@ -202,20 +174,6 @@ window.LASZOS_PRODUCTS = [
     "price": 114000
    }
   ]
- },
- {
-  "id": "nav-porcelana-mantel",
-  "cat": "manteles",
-  "col": "porcelana",
-  "art": true,
-  "name": "Mantel Porcelana",
-  "line": "Rectangular · colección Navidad",
-  "price": 250000,
-  "imgs": [
-   "assets/img/navidad/porcelana-mantel.jpg",
-   "assets/img/navidad/porcelana-mantel-uso.jpg"
-  ],
-  "tag": "Navidad"
  },
  {
   "id": "nav-porcelana-limpion",
@@ -308,66 +266,6 @@ window.LASZOS_PRODUCTS = [
   "tag": "Pack"
  },
  {
-  "id": "nav-cascanueces-pack-mesa",
-  "cat": "packs",
-  "col": "cascanueces",
-  "art": true,
-  "name": "Pack Mesa Cascanueces",
-  "line": "Mantel + juego de 6 servilletas",
-  "price": 339000,
-  "list": 364000,
-  "includes": [
-   "Mantel rectangular",
-   "Juego de 6 servilletas 48 × 48 cm"
-  ],
-  "imgs": [
-   "assets/img/navidad/cascanueces-mantel.jpg",
-   "assets/img/navidad/cascanueces-mantel-uso.jpg",
-   "assets/img/navidad/cascanueces-servilleta-uso.jpg"
-  ],
-  "tag": "Pack"
- },
- {
-  "id": "nav-velitas-pack-mesa",
-  "cat": "packs",
-  "col": "velitas",
-  "art": true,
-  "name": "Pack Mesa Noche de Velitas",
-  "line": "Mantel + juego de 6 servilletas",
-  "price": 339000,
-  "list": 364000,
-  "includes": [
-   "Mantel rectangular",
-   "Juego de 6 servilletas 48 × 48 cm"
-  ],
-  "imgs": [
-   "assets/img/navidad/velitas-mantel.jpg",
-   "assets/img/navidad/velitas-mantel-uso.jpg",
-   "assets/img/navidad/velitas-servilleta-uso.jpg"
-  ],
-  "tag": "Pack"
- },
- {
-  "id": "nav-porcelana-pack-mesa",
-  "cat": "packs",
-  "col": "porcelana",
-  "art": true,
-  "name": "Pack Mesa Porcelana",
-  "line": "Mantel + juego de 6 servilletas",
-  "price": 339000,
-  "list": 364000,
-  "includes": [
-   "Mantel rectangular",
-   "Juego de 6 servilletas 48 × 48 cm"
-  ],
-  "imgs": [
-   "assets/img/navidad/porcelana-mantel.jpg",
-   "assets/img/navidad/porcelana-mantel-uso.jpg",
-   "assets/img/navidad/porcelana-servilleta-uso.jpg"
-  ],
-  "tag": "Pack"
- },
- {
   "id": "nav-trio-limpiones",
   "cat": "packs",
   "col": "trio",
@@ -385,72 +283,6 @@ window.LASZOS_PRODUCTS = [
    "assets/img/navidad/cascanueces-limpion-uso.jpg",
    "assets/img/navidad/velitas-limpion-uso.jpg",
    "assets/img/navidad/porcelana-limpion-uso.jpg"
-  ],
-  "tag": "Pack"
- },
- {
-  "id": "nav-cascanueces-pack-completa",
-  "cat": "packs",
-  "col": "cascanueces",
-  "art": true,
-  "name": "Colección Completa Cascanueces",
-  "line": "Mantel + juego de 6 servilletas + pañoleta",
-  "price": 459000,
-  "list": 499000,
-  "includes": [
-   "Mantel rectangular",
-   "Juego de 6 servilletas 48 × 48 cm",
-   "Pañoleta 72 × 72 cm"
-  ],
-  "imgs": [
-   "assets/img/navidad/cascanueces-mantel.jpg",
-   "assets/img/navidad/cascanueces-mantel-uso.jpg",
-   "assets/img/navidad/cascanueces-panoleta-uso.jpg",
-   "assets/img/navidad/cascanueces-servilleta-uso.jpg"
-  ],
-  "tag": "Pack"
- },
- {
-  "id": "nav-velitas-pack-completa",
-  "cat": "packs",
-  "col": "velitas",
-  "art": true,
-  "name": "Colección Completa Noche de Velitas",
-  "line": "Mantel + juego de 6 servilletas + pañoleta",
-  "price": 459000,
-  "list": 499000,
-  "includes": [
-   "Mantel rectangular",
-   "Juego de 6 servilletas 48 × 48 cm",
-   "Pañoleta 72 × 72 cm"
-  ],
-  "imgs": [
-   "assets/img/navidad/velitas-mantel.jpg",
-   "assets/img/navidad/velitas-mantel-uso.jpg",
-   "assets/img/navidad/velitas-panoleta-uso.jpg",
-   "assets/img/navidad/velitas-servilleta-uso.jpg"
-  ],
-  "tag": "Pack"
- },
- {
-  "id": "nav-porcelana-pack-completa",
-  "cat": "packs",
-  "col": "porcelana",
-  "art": true,
-  "name": "Colección Completa Porcelana",
-  "line": "Mantel + juego de 6 servilletas + pañoleta",
-  "price": 459000,
-  "list": 499000,
-  "includes": [
-   "Mantel rectangular",
-   "Juego de 6 servilletas 48 × 48 cm",
-   "Pañoleta 72 × 72 cm"
-  ],
-  "imgs": [
-   "assets/img/navidad/porcelana-mantel.jpg",
-   "assets/img/navidad/porcelana-mantel-uso.jpg",
-   "assets/img/navidad/porcelana-panoleta-uso.jpg",
-   "assets/img/navidad/porcelana-servilleta-uso.jpg"
   ],
   "tag": "Pack"
  },
@@ -518,67 +350,6 @@ window.LASZOS_PRODUCTS = [
   ],
   "tag": "Pack",
   "list": 228000
- },
- {
-  "id": "mantel-aves-del-tropico",
-  "cat": "manteles",
-  "name": "Mantel Aves del Trópico",
-  "line": "Redondo · colección Jardín",
-  "price": 250000,
-  "imgs": [
-   "assets/img/productos/mantel-aves-del-tropico.jpg"
-  ],
-  "tag": "Nuevo"
- },
- {
-  "id": "mantel-flor-de-loto",
-  "cat": "manteles",
-  "name": "Mantel Flor de Loto",
-  "line": "Rectangular · cenefa verde",
-  "price": 250000,
-  "imgs": [
-   "assets/img/productos/mantel-flor-de-loto.jpg"
-  ]
- },
- {
-  "id": "mantel-guirnalda-silvestre",
-  "cat": "manteles",
-  "name": "Mantel Guirnalda Silvestre",
-  "line": "Rectangular · ribete marino",
-  "price": 250000,
-  "imgs": [
-   "assets/img/productos/mantel-guirnalda-silvestre.jpg"
-  ]
- },
- {
-  "id": "mantel-follaje",
-  "cat": "manteles",
-  "name": "Mantel Follaje",
-  "line": "Redondo · faldón verde",
-  "price": 250000,
-  "imgs": [
-   "assets/img/productos/mantel-follaje.jpg"
-  ]
- },
- {
-  "id": "mantel-cenefa-gris",
-  "cat": "manteles",
-  "name": "Mantel Cenefa Imperial",
-  "line": "Rectangular · gris perla",
-  "price": 250000,
-  "imgs": [
-   "assets/img/productos/mantel-cenefa-gris.jpg"
-  ]
- },
- {
-  "id": "mantel-botanico-salvia",
-  "cat": "manteles",
-  "name": "Mantel Botánico Salvia",
-  "line": "Rectangular · salvia",
-  "price": 250000,
-  "imgs": [
-   "assets/img/productos/mantel-botanico-salvia.jpg"
-  ]
  },
  {
   "id": "camino-toile-selva",

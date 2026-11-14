@@ -20,7 +20,6 @@
   ];
   const CATS = [
     { id: 'navidad', label: 'Navidad ✦', short: 'Navidad', cover: 'assets/img/navidad/cascanueces-panoleta.jpg', art: true },
-    { id: 'manteles', label: 'Manteles', cover: 'assets/img/productos/mantel-flor-de-loto.jpg' },
     { id: 'servilletas', label: 'Servilletas', cover: 'assets/img/servilletas/limones-higos-uso.jpg' },
     { id: 'caminos', label: 'Caminos e individuales', short: 'Caminos', cover: 'assets/img/productos/individual-limones.jpg' },
     { id: 'panos', label: 'Limpiones y chiros', short: 'Limpiones', cover: 'assets/img/limpiones/limpion-huerto-uso.jpg' },
@@ -29,7 +28,6 @@
     { id: 'toallas', label: 'Toallas', cover: 'assets/img/toallas/tigre.jpg' },
   ];
   const DESCRIPTIONS = {
-    manteles: 'Estampado de autor sobre tela de caída suave, con dobladillo terminado a mano. Disponible en otras medidas sobre pedido.',
     servilletas: 'Juego de servilletas con dobladillo fino, pensadas para lucir dobladas en triángulo o sobre el plato.',
     caminos: 'Para vestir la mesa sin cubrirla del todo. Combínalos con servilletas de la misma colección.',
     panos: 'Estampado de autor, tan bonito para secar como para servir el pan.',
@@ -216,10 +214,10 @@
   $('[data-towel-next]').addEventListener('click', () => rail.scrollBy({ left: step(), behavior: 'smooth' }));
 
   /* ---------- Colección de Navidad ---------- */
-  const KIND_ORDER = ['panoleta', 'servilleta', 'mantel', 'limpion', 'chiro'];
+  const KIND_ORDER = ['panoleta', 'servilleta', 'limpion', 'chiro'];
   $('[data-xmas]').innerHTML = COLLECTIONS.map(c => {
     const pieces = KIND_ORDER.map(k => byId[`nav-${c.id}-${k}`]).filter(Boolean);
-    const packHTML = ['completa', 'mesa', 'regalo'].map(k => byId[`nav-${c.id}-pack-${k}`]).filter(Boolean).map(pack => `<div class="xpack">
+    const packHTML = ['regalo'].map(k => byId[`nav-${c.id}-pack-${k}`]).filter(Boolean).map(pack => `<div class="xpack">
         <div><p class="eyebrow">${esc(pack.name.replace(' ' + c.name, ''))} · ahorras ${money(pack.list - pack.price)}</p>
           <b>${esc(pack.line)}</b></div>
         <div class="xpack__buy"><span>${priceHTML(pack)}</span>
