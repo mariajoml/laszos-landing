@@ -585,6 +585,247 @@ window.LASZOS_PRODUCTS = [
   "tag": "Nuevo"
  },
  {
+  "id": "serv-leopardo",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Leopardo Navideño",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/leopardo.jpg",
+   "assets/img/servilletas/leopardo-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-celosia",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Celosía de Acebo",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/celosia.jpg",
+   "assets/img/servilletas/celosia-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-granadas",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Granadas",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/granadas.jpg",
+   "assets/img/servilletas/granadas-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-ositos",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Ositos",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/ositos.jpg",
+   "assets/img/servilletas/ositos-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-caballito",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Caballito de Madera",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/caballito.jpg",
+   "assets/img/servilletas/caballito-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-lazo-carmesi",
+  "cat": "servilletas",
+  "name": "Servilletas Lazo Carmesí",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/lazo-carmesi-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-cinta-escocesa",
+  "cat": "servilletas",
+  "name": "Servilletas Cinta Escocesa",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/cinta-escocesa-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-esfera-dorada",
+  "cat": "servilletas",
+  "name": "Servilletas Esfera Dorada",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/esfera-dorada-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-mono-terciopelo",
+  "cat": "servilletas",
+  "name": "Servilletas Moño de Terciopelo",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/mono-terciopelo-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-bosque-conejos",
+  "cat": "servilletas",
+  "name": "Servilletas Conejos del Bosque",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/bosque-conejos-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-galope",
+  "cat": "servilletas",
+  "name": "Servilletas Caballo al Galope",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/galope-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
   "id": "toalla-a-tapiz",
   "cat": "personalizados",
   "name": "Toalla de Visitas Tapiz",
