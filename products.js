@@ -717,51 +717,8 @@ window.LASZOS_PRODUCTS = [
    }
   ],
   "imgs": [
+   "assets/img/servilletas/lazo-carmesi.jpg",
    "assets/img/servilletas/lazo-carmesi-uso.jpg"
-  ],
-  "tag": "Navidad"
- },
- {
-  "id": "serv-cinta-escocesa",
-  "cat": "servilletas",
-  "art": true,
-  "name": "Servilletas Cinta Escocesa",
-  "line": "Servilletas en lino · estampadas",
-  "price": 76000,
-  "sizes": [
-   {
-    "name": "Juego de 4",
-    "price": 76000
-   },
-   {
-    "name": "Juego de 6",
-    "price": 114000
-   }
-  ],
-  "imgs": [
-   "assets/img/servilletas/cinta-escocesa-uso.jpg"
-  ],
-  "tag": "Navidad"
- },
- {
-  "id": "serv-esfera-dorada",
-  "cat": "servilletas",
-  "art": true,
-  "name": "Servilletas Esfera Dorada",
-  "line": "Servilletas en lino · estampadas",
-  "price": 76000,
-  "sizes": [
-   {
-    "name": "Juego de 4",
-    "price": 76000
-   },
-   {
-    "name": "Juego de 6",
-    "price": 114000
-   }
-  ],
-  "imgs": [
-   "assets/img/servilletas/esfera-dorada-uso.jpg"
   ],
   "tag": "Navidad"
  },
