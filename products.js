@@ -585,6 +585,121 @@ window.LASZOS_PRODUCTS = [
   "tag": "Nuevo"
  },
  {
+  "id": "serv-galleta-porcelana",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Galleta de Porcelana",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/galleta-porcelana.jpg",
+   "assets/img/servilletas/galleta-porcelana-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-flor-azul",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Flor Azul",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/flor-azul.jpg",
+   "assets/img/servilletas/flor-azul-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "serv-palmera-verde",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Palmera Verde",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/palmera-verde.jpg",
+   "assets/img/servilletas/palmera-verde-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "serv-escarabajos-coral",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Escarabajos Coral",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/escarabajos-coral.jpg",
+   "assets/img/servilletas/escarabajos-coral-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "serv-monos-tropicales",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Monos Tropicales",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/monos-tropicales.jpg",
+   "assets/img/servilletas/monos-tropicales-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
   "id": "serv-leopardo",
   "cat": "servilletas",
   "art": true,
@@ -740,6 +855,7 @@ window.LASZOS_PRODUCTS = [
    }
   ],
   "imgs": [
+   "assets/img/servilletas/mono-terciopelo.jpg",
    "assets/img/servilletas/mono-terciopelo-uso.jpg"
   ],
   "tag": "Navidad"
@@ -762,6 +878,7 @@ window.LASZOS_PRODUCTS = [
    }
   ],
   "imgs": [
+   "assets/img/servilletas/bosque-conejos.jpg",
    "assets/img/servilletas/bosque-conejos-uso.jpg"
   ],
   "tag": "Navidad"
