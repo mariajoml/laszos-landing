@@ -700,6 +700,75 @@ window.LASZOS_PRODUCTS = [
   "tag": "Nuevo"
  },
  {
+  "id": "serv-cabana-nevada",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Cabaña Nevada",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/cabana-nevada.jpg",
+   "assets/img/servilletas/cabana-nevada-uso.jpg"
+  ],
+  "tag": "Navidad"
+ },
+ {
+  "id": "serv-zorro-bosque",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Zorro del Bosque",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/zorro-bosque.jpg",
+   "assets/img/servilletas/zorro-bosque-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
+  "id": "serv-flores-silvestres",
+  "cat": "servilletas",
+  "art": true,
+  "name": "Servilletas Flores Silvestres",
+  "line": "Servilletas en lino · estampadas",
+  "price": 76000,
+  "sizes": [
+   {
+    "name": "Juego de 4",
+    "price": 76000
+   },
+   {
+    "name": "Juego de 6",
+    "price": 114000
+   }
+  ],
+  "imgs": [
+   "assets/img/servilletas/flores-silvestres.jpg",
+   "assets/img/servilletas/flores-silvestres-uso.jpg"
+  ],
+  "tag": "Nuevo"
+ },
+ {
   "id": "serv-leopardo",
   "cat": "servilletas",
   "art": true,
