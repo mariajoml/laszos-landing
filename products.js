@@ -769,29 +769,6 @@ window.LASZOS_PRODUCTS = [
   "tag": "Nuevo"
  },
  {
-  "id": "serv-leopardo",
-  "cat": "servilletas",
-  "art": true,
-  "name": "Servilletas Leopardo Navideño",
-  "line": "Servilletas en lino · estampadas",
-  "price": 76000,
-  "sizes": [
-   {
-    "name": "Juego de 4",
-    "price": 76000
-   },
-   {
-    "name": "Juego de 6",
-    "price": 114000
-   }
-  ],
-  "imgs": [
-   "assets/img/servilletas/leopardo.jpg",
-   "assets/img/servilletas/leopardo-uso.jpg"
-  ],
-  "tag": "Navidad"
- },
- {
   "id": "serv-celosia",
   "cat": "servilletas",
   "art": true,
