@@ -1024,7 +1024,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/dalias.jpg",
+   "assets/img/panoletas/dalias-diseno.jpg",
    "assets/img/panoletas/dalias-uso.jpg"
   ],
   "art": true
@@ -1036,7 +1036,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/escarabajos.jpg",
+   "assets/img/panoletas/escarabajos-diseno.jpg",
    "assets/img/panoletas/escarabajos-uso.jpg"
   ],
   "art": true
@@ -1048,7 +1048,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/aves-del-paraiso.jpg",
+   "assets/img/panoletas/aves-del-paraiso-diseno.jpg",
    "assets/img/panoletas/aves-del-paraiso-uso.jpg"
   ],
   "art": true
@@ -1060,7 +1060,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/carruaje.jpg",
+   "assets/img/panoletas/carruaje-diseno.jpg",
    "assets/img/panoletas/carruaje-uso.jpg"
   ],
   "art": true
@@ -1072,7 +1072,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/globos.jpg",
+   "assets/img/panoletas/globos-diseno.jpg",
    "assets/img/panoletas/globos-uso.jpg"
   ],
   "art": true
@@ -1084,8 +1084,10 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/orquideas.jpg"
-  ]
+   "assets/img/panoletas/orquideas-diseno.jpg",
+   "assets/img/panoletas/orquideas-uso.jpg"
+  ],
+  "art": true
  },
  {
   "id": "panoleta-pensamientos",
@@ -1094,7 +1096,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/pensamientos.jpg",
+   "assets/img/panoletas/pensamientos-diseno.jpg",
    "assets/img/panoletas/pensamientos-uso.jpg"
   ],
   "tag": "Nuevo",
@@ -1107,7 +1109,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/tulipanes.jpg",
+   "assets/img/panoletas/tulipanes-diseno.jpg",
    "assets/img/panoletas/tulipanes-uso.jpg"
   ],
   "tag": "Nuevo",
@@ -1120,7 +1122,7 @@ window.LASZOS_PRODUCTS = [
   "line": "Pañoleta 72 × 72 cm · también como servilleta",
   "price": 135000,
   "imgs": [
-   "assets/img/panoletas/leopardo.jpg",
+   "assets/img/panoletas/leopardo-diseno.jpg",
    "assets/img/panoletas/leopardo-uso.jpg"
   ],
   "tag": "Nuevo",

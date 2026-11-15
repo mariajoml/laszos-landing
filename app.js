@@ -24,7 +24,7 @@
     { id: 'caminos', label: 'Caminos e individuales', short: 'Caminos', cover: 'assets/img/productos/individual-limones.jpg' },
     { id: 'panos', label: 'Limpiones y chiros', short: 'Limpiones', cover: 'assets/img/limpiones/limpion-huerto-uso.jpg' },
     { id: 'personalizados', label: 'Personalizados', cover: 'assets/img/productos/toalla-laurel.jpg' },
-    { id: 'panoletas', label: 'Pañoletas', cover: 'assets/img/panoletas/tulipanes.jpg' },
+    { id: 'panoletas', label: 'Pañoletas', cover: 'assets/img/panoletas/tulipanes-diseno.jpg' },
     { id: 'toallas', label: 'Toallas', cover: 'assets/img/toallas/tigre.jpg' },
   ];
   const DESCRIPTIONS = {
